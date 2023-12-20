@@ -1,0 +1,7 @@
+
+@back BDGN
+@i
+
+@goto BDGG if:G_Billy==1
+@goto BDGB if:G_Billy==0
+@stop

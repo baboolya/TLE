@@ -1,0 +1,7 @@
+
+@back SSDN
+@i
+
+@goto SSDG if:G_Billy==1
+@goto SSDB if:G_Billy==0
+@stop

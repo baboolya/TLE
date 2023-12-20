@@ -1,0 +1,16 @@
+
+@hideChars
+@bgm 123 volume:80
+@back sb1600
+@i
+@back DayKitchen
+Вы проснулись и почувствовали запах жареных гренок. Мама готовит завтрак, вы направились на кухню
+@char Konst.Listen
+@char Mom.Home
+Konst: -"Доброе утро, мама! "
+Mom: -"Доброе Костя... Как спал? "
+Konst: -"Всё нормально"
+
+@save
+@goto 70
+@stop

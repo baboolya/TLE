@@ -1,0 +1,1341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06386b10f29c770408fc88b031c4d7fd, type: 3}
+  m_Name: EditorResources
+  m_EditorClassIdentifier: 
+  resourceCategories:
+  - Id: TextPrinters/86f10d57-c870-4795-a5bc-399463047aaf
+    Resources:
+    - name: Dialogue
+      pathPrefix: TextPrinters
+      guid: 1bc08ccd31adff6439e97161aa6e1d8b
+  - Id: TextPrinters/256cda84-3a5f-4484-9439-a5efcb7bd5a6
+    Resources:
+    - name: Fullscreen
+      pathPrefix: TextPrinters
+      guid: c87cebd3f0d4f174789cd351ce9591c4
+  - Id: TextPrinters/067fe50e-daaf-4053-89fc-dda47c62ffa7
+    Resources:
+    - name: Wide
+      pathPrefix: TextPrinters
+      guid: 781828b806deb1e4cbf50ef9de41da10
+  - Id: TextPrinters/949325d9-a247-4719-8f99-efe8a9564b9c
+    Resources:
+    - name: Chat
+      pathPrefix: TextPrinters
+      guid: 0126b92e4ff0f564aaa7a38eae3ef6e7
+  - Id: TextPrinters/25cc408b-c4d6-453c-ae63-a125f33bd3f3
+    Resources:
+    - name: Bubble
+      pathPrefix: TextPrinters
+      guid: b47d9659b2be5ee4e95a776f213c9d4b
+  - Id: TextPrinters/a0007552-da3a-4c73-912b-c671c7c5e77c
+    Resources:
+    - name: TMProDialogue
+      pathPrefix: TextPrinters
+      guid: 5838611042eaced44954639c4ea4d81e
+  - Id: TextPrinters/5425c3ca-90dc-4ce2-8355-46ccedfcb1d1
+    Resources:
+    - name: TMProFullscreen
+      pathPrefix: TextPrinters
+      guid: a2aaa417785eeca409e78c404f333ee5
+  - Id: TextPrinters/2029e99a-3618-4f98-bd79-56f0ec46f993
+    Resources:
+    - name: TMProWide
+      pathPrefix: TextPrinters
+      guid: 7860ef40eae6a3341be02586f7edd980
+  - Id: TextPrinters/097d9e99-c19b-4c26-b028-f5af32d1a648
+    Resources:
+    - name: TMProChat
+      pathPrefix: TextPrinters
+      guid: 6f9836a3c4f777741b1962979d97e485
+  - Id: TextPrinters/34617860-c399-44f3-9e30-d182d7c82ba4
+    Resources:
+    - name: TMProBubble
+      pathPrefix: TextPrinters
+      guid: 18cfa78b5fc89b745ba69d51a6a8629a
+  - Id: ChoiceHandlers/0cb78c92-3399-4551-9104-4ecf1810c01b
+    Resources:
+    - name: ButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 1f6aa29000e839c409e6a9c0704adc96
+  - Id: ChoiceHandlers/c7f79fcb-ed88-44cf-8284-51fdf1920643
+    Resources:
+    - name: ButtonArea
+      pathPrefix: ChoiceHandlers
+      guid: 4fa6d62f894ae6e4698bfa8af59e7942
+  - Id: ChoiceHandlers/c5b15ad8-795d-45f8-b12d-399787abd17b
+    Resources:
+    - name: ChatReply
+      pathPrefix: ChoiceHandlers
+      guid: 0e61df696cabbea448510879ee732b00
+  - Id: Spawn
+    Resources:
+    - name: Animate
+      pathPrefix: Spawn
+      guid: 7bf06fa813bb9c34daf521998fa72ab1
+    - name: DepthOfField
+      pathPrefix: Spawn
+      guid: ea76638b26a915946b62907dd1e776fd
+    - name: DigitalGlitch
+      pathPrefix: Spawn
+      guid: be75a73ecccb90b4caa5c14edb9ac467
+    - name: Rain
+      pathPrefix: Spawn
+      guid: a9117e2fa90704d45b3e1461596c11ee
+    - name: ShakeBackground
+      pathPrefix: Spawn
+      guid: 9f56c556ba32fd54fae62347c25a8145
+    - name: ShakeCamera
+      pathPrefix: Spawn
+      guid: 1c5b86cf3cfbb1f44ae5641699077da4
+    - name: ShakeCharacter
+      pathPrefix: Spawn
+      guid: 1224d69e1592d624cbde93d0f7383d91
+    - name: ShakePrinter
+      pathPrefix: Spawn
+      guid: 2795040988e866646801c80024c50be1
+    - name: Snow
+      pathPrefix: Spawn
+      guid: 9f4e71cb27fffa04486737d2cf8d622d
+    - name: SunShafts
+      pathPrefix: Spawn
+      guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - name: Blur
+      pathPrefix: Spawn
+      guid: e466d9326b30a4b49a3dad428b4d9968
+  - Id: UI
+    Resources:
+    - name: ClickThroughPanel
+      pathPrefix: UI
+      guid: 702c32b2de0c0784b9a66ec90601874f
+    - name: BacklogUI
+      pathPrefix: UI
+      guid: 7fba909c66b25324cb77db18679c2c96
+    - name: CGGalleryUI
+      pathPrefix: UI
+      guid: 71da50c8dae82bd42ba67528804e820c
+    - name: ConfirmationUI
+      pathPrefix: UI
+      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+    - name: ContinueInputUI
+      pathPrefix: UI
+      guid: 1add671f8348e8443bcc56290e82fc5e
+    - name: ExternalScriptsUI
+      pathPrefix: UI
+      guid: 671ceb4f549ddf046913d7debf113469
+    - name: LoadingUI
+      pathPrefix: UI
+      guid: 53aad00e5cf184e458adb001c550518a
+    - name: MovieUI
+      pathPrefix: UI
+      guid: f9a211517d1cb1a44964dc2254463049
+    - name: RollbackUI
+      pathPrefix: UI
+      guid: a32c73a3aff4b274c85b3ff16c854b07
+    - name: SaveLoadUI
+      pathPrefix: UI
+      guid: 8d53726b3d08433479398f02b4780e7f
+    - name: SceneTransitionUI
+      pathPrefix: UI
+      guid: e3b234b4273b7f64ab3f1d9fe425ed23
+    - name: SettingsUI
+      pathPrefix: UI
+      guid: 65c37f59e9b266f468dd5381fdc03fc3
+    - name: TipsUI
+      pathPrefix: UI
+      guid: f5aae572225ee1b4c96d1a17fc5cb073
+    - name: TitleUI
+      pathPrefix: UI
+      guid: 4b121aa1be1b7e04480b452c595ff17a
+    - name: VariableInputUI
+      pathPrefix: UI
+      guid: bb95f484e341dcd4391a572f22b7d067
+    - name: PauseUI
+      pathPrefix: UI
+      guid: 480f5db62ea305c46b89a86496d2a0c9
+    - name: ToastUI
+      pathPrefix: UI
+      guid: dd85ce99288c2f8488447fa511b1c0d6
+  - Id: Characters/6bbfbafa-27cf-4a39-93e9-ede9d6cb19a3
+    Resources:
+    - name: KidWinter
+      pathPrefix: Characters/Konst
+      guid: 922ed8a1bfa5cdb4fa3f64688fe61eca
+    - name: KidListen
+      pathPrefix: Characters/Konst
+      guid: 14a2b6bdcccc3e84aa54abc8fe99edf1
+    - name: School
+      pathPrefix: Characters/Konst
+      guid: 29709f730c332a34b986ca97a577e540
+  - Id: Scripts
+    Resources:
+    - name: PrologNew
+      pathPrefix: Scripts
+      guid: 3340bec72d4981946b2b2de6dc535421
+    - name: 11
+      pathPrefix: Scripts
+      guid: c2628fe5fb55e614bb44a2931ea14fc8
+    - name: 12
+      pathPrefix: Scripts
+      guid: 2549ef179ce0c5c42a5f8351d1822938
+    - name: 121
+      pathPrefix: Scripts
+      guid: 7205430cfc216cd4f98644af5f41d908
+    - name: 122
+      pathPrefix: Scripts
+      guid: 29ab1ab918a49f84da6a9851d4391599
+    - name: 1211
+      pathPrefix: Scripts
+      guid: 17c4ae01bffa5564ebae58ace8eaafe5
+    - name: 12111
+      pathPrefix: Scripts
+      guid: 86a162bdedf1cd343b9ab3946d7f8e01
+    - name: 12112
+      pathPrefix: Scripts
+      guid: d845d4f5758aa694ba55a77edace49cf
+    - name: 121111
+      pathPrefix: Scripts
+      guid: b04226b20a763604393183987f817962
+    - name: 21
+      pathPrefix: Scripts
+      guid: 8b26441ee35e8c0418b5bd53338a3935
+    - name: 212
+      pathPrefix: Scripts
+      guid: 5932e4ed757fa664da5703f0c4e5a601
+    - name: 213
+      pathPrefix: Scripts
+      guid: 3f96e5e5ac64b784ba1223a9722b7bd0
+    - name: 2111
+      pathPrefix: Scripts
+      guid: bb45daa469a6bb044a20cfcb54dd613b
+    - name: 2112
+      pathPrefix: Scripts
+      guid: 3a7c5feea5720344c8b9999acf9c4e1e
+    - name: 3
+      pathPrefix: Scripts
+      guid: 81163a0c12f8b4e45a753436a45ba1ba
+    - name: 1q
+      pathPrefix: Scripts
+      guid: 519df69f7fa923b47ba3a4190e14b647
+    - name: 2q
+      pathPrefix: Scripts
+      guid: 90fce7031a85a7f48ab3a97efc603194
+    - name: 4
+      pathPrefix: Scripts
+      guid: 39bca1b71234ef34f807c0de390ada4c
+    - name: 41
+      pathPrefix: Scripts
+      guid: 65fc723345ccdba459191f04547f826b
+    - name: 42
+      pathPrefix: Scripts
+      guid: 7539ff7c90865754cbad434b2019931e
+    - name: 411
+      pathPrefix: Scripts
+      guid: e556c5e081d7a7548a0ce8c62036a68d
+    - name: 4111
+      pathPrefix: Scripts
+      guid: 4c42af4e8d8a7af47a7354acec3a0a21
+    - name: 41111
+      pathPrefix: Scripts
+      guid: ab24c356bb3a33b438d963b6e111708c
+    - name: 411111
+      pathPrefix: Scripts
+      guid: 8305fce87a38d2d48b21cac85edabd03
+    - name: 41112
+      pathPrefix: Scripts
+      guid: 30139569fe49b5047bad587e1dce9dc0
+    - name: 4111121
+      pathPrefix: Scripts
+      guid: 0220391ca2c5ff44798b394abf83847f
+    - name: 4q
+      pathPrefix: Scripts
+      guid: fb4afa84cb2a09346945d6bed57bf1b9
+    - name: 4112
+      pathPrefix: Scripts
+      guid: 5c8def39ef218d341be974ea625557c9
+    - name: 5
+      pathPrefix: Scripts
+      guid: fceae1ac7d03f984b84e6572228252e8
+    - name: 51
+      pathPrefix: Scripts
+      guid: fb0209ac63fa01743b0cd27e887645b5
+    - name: 52
+      pathPrefix: Scripts
+      guid: b2be7bd93dd995d4fbc43add05b84fdf
+    - name: 521
+      pathPrefix: Scripts
+      guid: fcfdc047cfc69574d9c93cd5cf046a91
+    - name: 522
+      pathPrefix: Scripts
+      guid: 45ed3cea93008b04b960550103a0826d
+    - name: 6
+      pathPrefix: Scripts
+      guid: 209740bd78e974a4883796f20494469b
+    - name: 61
+      pathPrefix: Scripts
+      guid: 71cd8c4f5b09f394983f5bcbb02384c9
+    - name: 62
+      pathPrefix: Scripts
+      guid: 73ee01ddfe08d38479c8d124ee84718b
+    - name: 30
+      pathPrefix: Scripts
+      guid: 27db86293048100478c62eed403b7630
+    - name: 301
+      pathPrefix: Scripts
+      guid: 1e3b3f93de4a63c46bb9c3933ae83ccd
+    - name: 3011
+      pathPrefix: Scripts
+      guid: 82dfc38e7ec40bc47b80e54c06a27ad1
+    - name: 3012
+      pathPrefix: Scripts
+      guid: 4747b2906c77d044d9e04cb256e9baab
+    - name: 302
+      pathPrefix: Scripts
+      guid: cb98634428d73a149972b37eb24b8823
+    - name: 012111
+      pathPrefix: Scripts
+      guid: ba64cf90930f6ce45a083f0507294555
+    - name: 01211
+      pathPrefix: Scripts
+      guid: 8e5eccb25dbb4a44c952e303f27f0971
+    - name: 01212
+      pathPrefix: Scripts
+      guid: 49d2e81ec694fca43beca9d8826cb937
+    - name: 0121111
+      pathPrefix: Scripts
+      guid: 297f69682c2877544879fe129750fddd
+    - name: 0121112
+      pathPrefix: Scripts
+      guid: 02d62bdce4691584c8285aa92f356b14
+    - name: 7
+      pathPrefix: Scripts
+      guid: 1bc91c70e06e08e469069d91a98c8a9e
+    - name: 70
+      pathPrefix: Scripts
+      guid: 8952b56e56c9e604189cfdb09b2761b4
+    - name: 701
+      pathPrefix: Scripts
+      guid: de1b5a54f41a3634ea111aad0d01e2ff
+    - name: 7011
+      pathPrefix: Scripts
+      guid: 19bb265986587a340bc3d0f2c7aef4d6
+    - name: 8
+      pathPrefix: Scripts
+      guid: 10683914c1a2f2d4abb461629cc18f8f
+    - name: 7012
+      pathPrefix: Scripts
+      guid: 42fcf5fc763745440ba3abd87beb32f1
+    - name: 0701
+      pathPrefix: Scripts
+      guid: 4e100540b21c72d4ea09d48c41a5f03d
+    - name: 702
+      pathPrefix: Scripts
+      guid: 747ee8022c1d03c45ac58a260ad69615
+    - name: 7020
+      pathPrefix: Scripts
+      guid: 5c8abd6bfddde694a8dafe30d203120d
+    - name: 70201
+      pathPrefix: Scripts
+      guid: 6d65c55280800bc4abc377d312e5c48b
+    - name: 702012
+      pathPrefix: Scripts
+      guid: 3af6ab180cbed954fb2c696dee22a105
+    - name: 7020121
+      pathPrefix: Scripts
+      guid: 8ef6e40a191ccb64a85841e5b97e87e4
+    - name: 7020122
+      pathPrefix: Scripts
+      guid: 2c8fb7154e5223d40bcf4b3554ca8f51
+    - name: 07020
+      pathPrefix: Scripts
+      guid: 380eb885edfddf94cbb0d20943790013
+    - name: 070202
+      pathPrefix: Scripts
+      guid: 360d2112b4b234b40b451f6092932e8e
+    - name: 070203
+      pathPrefix: Scripts
+      guid: 21d58e4ed1e57c04db5fa619dac38254
+    - name: 07021
+      pathPrefix: Scripts
+      guid: dd1dc871f8480b24d96aaa60b5b712ac
+    - name: 0070202
+      pathPrefix: Scripts
+      guid: 217dcbb874842db4096d59d1c3b262f3
+    - name: 9
+      pathPrefix: Scripts
+      guid: de7d1c3ccf60e0047b1650eb42e73282
+    - name: 91
+      pathPrefix: Scripts
+      guid: 0345cbc529d89ec42818a7a5c479df91
+    - name: 911
+      pathPrefix: Scripts
+      guid: 2655faf4844201a4cb8068ea37097560
+    - name: 912
+      pathPrefix: Scripts
+      guid: 76bbc2fa7e457d94bbec461393c65b7a
+    - name: 10
+      pathPrefix: Scripts
+      guid: d0852f6e8b3b96f4eb7d2ada43710f11
+    - name: 011
+      pathPrefix: Scripts
+      guid: de3b47433f88bd845afcf44cf061cebe
+    - name: 0111
+      pathPrefix: Scripts
+      guid: 8cd24ea2ab673be4292d45ca58dfcd0f
+    - name: 0112
+      pathPrefix: Scripts
+      guid: d620215729d89dd4ea4aa61d39d9d3be
+    - name: 011121
+      pathPrefix: Scripts
+      guid: f2ec99f78e0a53f4dba667fa059611ac
+    - name: a11
+      pathPrefix: Scripts
+      guid: 17dc926a843c90b47ad5ceb96547f205
+    - name: a111
+      pathPrefix: Scripts
+      guid: 437810f4671c8ea46ba28a7192a7c9a4
+    - name: a1111
+      pathPrefix: Scripts
+      guid: 4f9fbebd792617a44b3bc1f5e02e4a90
+    - name: a11111
+      pathPrefix: Scripts
+      guid: cee8463e37c513e4bada8db5157d287e
+    - name: a111111
+      pathPrefix: Scripts
+      guid: 86e1cd6211e858e4e811df6a8d92dab2
+    - name: a1111111
+      pathPrefix: Scripts
+      guid: f354a7a48c24d314590fda55be5a9e41
+    - name: a18
+      pathPrefix: Scripts
+      guid: 0280fa06a18db9843b730009a6c3986f
+    - name: a19
+      pathPrefix: Scripts
+      guid: 45d0e1b8050a4884193c7f67a9dfb636
+    - name: a12
+      pathPrefix: Scripts
+      guid: 3ac2ae4a2f406a34593986458c97af2f
+    - name: a121
+      pathPrefix: Scripts
+      guid: 1f609836a2a802741bc69ba6e9ef9040
+    - name: b12
+      pathPrefix: Scripts
+      guid: 79980be1e37207747adfd04e3a62941c
+    - name: a122
+      pathPrefix: Scripts
+      guid: 215811bd6b55dd24e80ae30c7a57d836
+    - name: b13
+      pathPrefix: Scripts
+      guid: 9dfbf4f84bcb8fb46909dab57618cfc5
+    - name: b14
+      pathPrefix: Scripts
+      guid: f8cd1c67071c02d4387a62e75352a4ce
+    - name: b141
+      pathPrefix: Scripts
+      guid: 24020a2ac9ad44b40b946c8b5ecd0e0a
+    - name: b142
+      pathPrefix: Scripts
+      guid: dd99135438324d54d96ce8433de19048
+    - name: b15
+      pathPrefix: Scripts
+      guid: c5ab9c9d07f02634aa10dab6e6f96797
+    - name: b152
+      pathPrefix: Scripts
+      guid: 9786f3479871ef24e87a01b4531f9bba
+    - name: 0b151
+      pathPrefix: Scripts
+      guid: 33f371d62e8a21c4d8c3176196ce39a4
+    - name: b16
+      pathPrefix: Scripts
+      guid: 9e5cd5bfbfabddc44a7aba5bf27e6a82
+    - name: b17
+      pathPrefix: Scripts
+      guid: dec35417f72ead348846188a53ba4987
+    - name: b18
+      pathPrefix: Scripts
+      guid: d08f480c3e3592d448acb71890b065d0
+    - name: b181
+      pathPrefix: Scripts
+      guid: d59c0be2d30c6fe4689b889c9ac39257
+    - name: b182
+      pathPrefix: Scripts
+      guid: 0c2f8507d40ef504fa59fce1b23bf560
+    - name: b1821
+      pathPrefix: Scripts
+      guid: 6409c66deed5f4d4ebac9fc450b4cafc
+    - name: b1822
+      pathPrefix: Scripts
+      guid: 8bb211a78e494ca41aae7006db0b5977
+    - name: 0b1822
+      pathPrefix: Scripts
+      guid: d44eab42e2e125b4ab1f8bc5c2413c5f
+    - name: b19
+      pathPrefix: Scripts
+      guid: 18375713c271127469fd534b223e5b42
+    - name: b191
+      pathPrefix: Scripts
+      guid: 362c4be10af49e542b2ebddf82c3b9ef
+    - name: b192
+      pathPrefix: Scripts
+      guid: 9d5a43c59bcc60f40a55dc59427ac260
+    - name: b1921
+      pathPrefix: Scripts
+      guid: b32d98e499f0b3a4caaa3fb8ee925e26
+    - name: b1922
+      pathPrefix: Scripts
+      guid: a8275034db88ce9489cdc97c5bf5992b
+    - name: c20
+      pathPrefix: Scripts
+      guid: 92b833d002b5e8440a87b88e81c36366
+    - name: c21
+      pathPrefix: Scripts
+      guid: c701814fb8c834c439243f8d0541e576
+    - name: 1miss
+      pathPrefix: Scripts
+      guid: eb278a73515ce8c49855911bcf007e2a
+    - name: 2miss
+      pathPrefix: Scripts
+      guid: 12ff67aee12042345b46e92b74e95b5e
+    - name: c212
+      pathPrefix: Scripts
+      guid: c5996e9771909f7488274c5455cb82f1
+    - name: c2121
+      pathPrefix: Scripts
+      guid: 25f9e8385b9a146428b03c40bca36a9e
+    - name: c21211
+      pathPrefix: Scripts
+      guid: dd09adbe632c8f94492e324d5b3baf3b
+    - name: BibleEnd
+      pathPrefix: Scripts
+      guid: e85e98aec63a5d64a8b98c1ca4c3ef09
+    - name: Chapter2
+      pathPrefix: Scripts
+      guid: d541ead5d97b13548bda25bfe4ae4e53
+    - name: End
+      pathPrefix: Scripts
+      guid: 5000ea6c515ecb3418290e68f6818262
+    - name: b01822
+      pathPrefix: Scripts
+      guid: 7a47eb2dc7bd37b40870eba163b160f7
+    - name: 07
+      pathPrefix: Scripts
+      guid: 1e94582c8a3975b41b56a0d0698ee3ad
+    - name: 0007
+      pathPrefix: Scripts
+      guid: 5fc705ae0e81590408d1f8a8305658d2
+    - name: d20
+      pathPrefix: Scripts
+      guid: e5b9681143ec9294c940bb14a8a221cd
+    - name: d21
+      pathPrefix: Scripts
+      guid: 045a51baadea8974ba04c58522c0fd47
+    - name: d211
+      pathPrefix: Scripts
+      guid: a51a6bd6dd84fb8469a891562c665abd
+    - name: d2111
+      pathPrefix: Scripts
+      guid: 64ec597dea0312b4ea4e0b7aee03e0ac
+    - name: SNNN
+      pathPrefix: Scripts
+      guid: b924cc976fe2a3d44a1ae6092a7ccd6b
+    - name: SSNN
+      pathPrefix: Scripts
+      guid: d95b33be7a6232e4fbb907a7ee26fce9
+    - name: SGNN
+      pathPrefix: Scripts
+      guid: 790874cb25717e240bdb5664dd7326b7
+    - name: SSGN
+      pathPrefix: Scripts
+      guid: 16b486255b704234caf9a82e1325c314
+    - name: SSDN
+      pathPrefix: Scripts
+      guid: 5e8b342d75871b74c9d894fe451c2b0a
+    - name: SSSN
+      pathPrefix: Scripts
+      guid: 8e4b4c8cce7431649aafe97fdd6aa0c2
+    - name: SGDN
+      pathPrefix: Scripts
+      guid: b895a459937b61049a2d81d40b4f7efd
+    - name: SGGN
+      pathPrefix: Scripts
+      guid: 4d08679ffaf85eb40bad42439b9d1508
+    - name: SSDG
+      pathPrefix: Scripts
+      guid: 7067f8c7962c0a14fab648120f4111fb
+    - name: SSGG
+      pathPrefix: Scripts
+      guid: c2284acf3774f034b976083db4ca7969
+    - name: SGGG
+      pathPrefix: Scripts
+      guid: 4a9615eee3dfd7f429d23ad79bf61027
+    - name: SGDG
+      pathPrefix: Scripts
+      guid: bf653516402a2a14a81f307bebab50c0
+    - name: SGDB
+      pathPrefix: Scripts
+      guid: 154c0bc2914a6f44c9d3c24de9f2af1a
+    - name: SGGB
+      pathPrefix: Scripts
+      guid: e8df0fd7a03c2604b939a6840cdcdca2
+    - name: SGSB
+      pathPrefix: Scripts
+      guid: 97ce32d4d10af77488c3be0099598965
+    - name: SSSB
+      pathPrefix: Scripts
+      guid: aa56b2c5d0bd4d54c9aa76077a837202
+    - name: GSDN
+      pathPrefix: Scripts
+      guid: 61e3d06d07c4f7f499d7d87454bf2d18
+    - name: GSGN
+      pathPrefix: Scripts
+      guid: 6a4648d1334fefd4db8354e5154952c3
+    - name: GSDG
+      pathPrefix: Scripts
+      guid: 4cec81925547abb4d998e3e2cba85d82
+    - name: GSNN
+      pathPrefix: Scripts
+      guid: 69fb03a87d9666d4eb3ab7294d11fb37
+    - name: GGNN
+      pathPrefix: Scripts
+      guid: 0a46ec08f779b9945b4cba671f376a38
+    - name: GGSN
+      pathPrefix: Scripts
+      guid: 7b5b1d5018bb92e4eb2caa0b8ad0f38b
+    - name: GGDN
+      pathPrefix: Scripts
+      guid: 0d0de091d22bf74418db89b8c79a9443
+    - name: GGGN
+      pathPrefix: Scripts
+      guid: cd80de0b18dc65e41881ea071cd7f529
+    - name: GSSG
+      pathPrefix: Scripts
+      guid: 4a0a651c1910eac418d428d72573dd6a
+    - name: GGSG
+      pathPrefix: Scripts
+      guid: 0532f233b29b18544a51046976fa0397
+    - name: GSGG
+      pathPrefix: Scripts
+      guid: 82a56134440237344b8862666293dafb
+    - name: BBNN
+      pathPrefix: Scripts
+      guid: 4dcfa4b306676ec45b987a9f2a9fc54a
+    - name: GGGB
+      pathPrefix: Scripts
+      guid: 60cd86c01b6187541b1fbf7814758414
+    - name: BNNN
+      pathPrefix: Scripts
+      guid: 2a4cff4d5a98f4340907f17270ec3d60
+    - name: BDNN
+      pathPrefix: Scripts
+      guid: 4fa117cd8461de74085f9a938e90a386
+    - name: BDGN
+      pathPrefix: Scripts
+      guid: 048c01e5736bc01449ce0c3ba472ddc3
+    - name: BBGN
+      pathPrefix: Scripts
+      guid: 93af5dca199c04b4ab4754db03f26426
+    - name: BDDN
+      pathPrefix: Scripts
+      guid: a38d90b50e5fcfc4ebe4a20777fb4726
+    - name: BDSN
+      pathPrefix: Scripts
+      guid: 47105dfea8c48734795dbdda2c07a724
+    - name: BBSN
+      pathPrefix: Scripts
+      guid: be9dc679b2f50a44086dc6f7296728f7
+    - name: BBDN
+      pathPrefix: Scripts
+      guid: 637c96fb7bc181f4d8bed78114af2ef6
+    - name: BBDG
+      pathPrefix: Scripts
+      guid: 330283bf6dde3f543abfc5c92f71a2f3
+    - name: BBSG
+      pathPrefix: Scripts
+      guid: f9950c33896a0114c82dbe5c36803b3c
+    - name: BDGG
+      pathPrefix: Scripts
+      guid: e95c3403185a8de47b0e84c5da494f44
+    - name: GGSB
+      pathPrefix: Scripts
+      guid: 45a71f8cbeb72b244bc38ce304624895
+    - name: GGDB
+      pathPrefix: Scripts
+      guid: db93c18ff41940a4096bc41b25a48590
+    - name: GSSB
+      pathPrefix: Scripts
+      guid: 593d8f3a993a97b4dad7517964083b47
+    - name: BDDG
+      pathPrefix: Scripts
+      guid: c734b40443867804a9ef3783d5e1ca91
+    - name: BBDB
+      pathPrefix: Scripts
+      guid: 672d45036e7df5a40bdd24bae69b03c2
+    - name: BBGB
+      pathPrefix: Scripts
+      guid: 502cc1c17acf4bc4e99b766db8ba7ca0
+    - name: BBSB
+      pathPrefix: Scripts
+      guid: 191c183ed82bdfd42b7e0104d2faef19
+    - name: BDSB
+      pathPrefix: Scripts
+      guid: 9033ed65f66a8df4893f3823ffcef2a5
+    - name: BDGB
+      pathPrefix: Scripts
+      guid: ba1e141a477aa0b419c06e2df1e14221
+    - name: BDDB
+      pathPrefix: Scripts
+      guid: e7c71d46c5b4d5349b6a580dce1bb555
+    - name: SGSN
+      pathPrefix: Scripts
+      guid: d177d5260118cde4b918ea075d6e8c09
+    - name: SSGB
+      pathPrefix: Scripts
+      guid: 76b334f3c8836f84292195f0db0e54f7
+    - name: BBGG
+      pathPrefix: Scripts
+      guid: 6ebbb1e336054054a9e778e4df5ffbc9
+    - name: SSDB
+      pathPrefix: Scripts
+      guid: 4bf0b0e7d6c11e342b9b45a88b7d3cfc
+    - name: GSGB
+      pathPrefix: Scripts
+      guid: 7a94db8b8364d30459e262ab6b1b009d
+    - name: SSSG
+      pathPrefix: Scripts
+      guid: c4875f05e8dffb34d9613891fdec1d61
+    - name: GNNN
+      pathPrefix: Scripts
+      guid: bc3eb364f1900084393145e7cb8bcdbd
+    - name: GSSN
+      pathPrefix: Scripts
+      guid: 5e5dca46984942a49a1b9ad06fafc373
+    - name: SGSG
+      pathPrefix: Scripts
+      guid: 9cef3d5f330b175459aa307227e8bf38
+    - name: BDSG
+      pathPrefix: Scripts
+      guid: ccd191d7c49af884bb9902c4095ef105
+    - name: GSDB
+      pathPrefix: Scripts
+      guid: 2712aecf340a5b94a99c0d117d1ee7c3
+    - name: GGDG
+      pathPrefix: Scripts
+      guid: 0a6ed7114fb96c948a77b413c8d4a73d
+    - name: GGGG
+      pathPrefix: Scripts
+      guid: 021b5b4b30fc2874c97879a76a9027ff
+    - name: b00182
+      pathPrefix: Scripts
+      guid: ec2aa5e743d7b8d45882e08ffac175a1
+    - name: 0C2
+      pathPrefix: Scripts
+      guid: a5ac7ec990b523a4a90672d88258c30e
+    - name: Title
+      pathPrefix: Scripts
+      guid: 4cb5917d9c42bec449b39302caf73c7c
+    - name: 00012
+      pathPrefix: Scripts
+      guid: 218063c6cffe46c4895759687e75c57a
+    - name: 00011
+      pathPrefix: Scripts
+      guid: 6acd8a8d4e64b8f4983abe658b82f2fe
+    - name: nameCat
+      pathPrefix: Scripts
+      guid: 90124dd4ecf399c49b45fbc576e67dbd
+    - name: tomas
+      pathPrefix: Scripts
+      guid: 8f05717565f98c4489fb5bc9ae2b69a8
+  - Id: Backgrounds/cef5c86c-3ba7-4902-babe-c62c5ee9dea8
+    Resources:
+    - name: AfterSchool
+      pathPrefix: Backgrounds/MainBackground
+      guid: f709a664a77585d448e929e91eb1caa1
+    - name: Bible
+      pathPrefix: Backgrounds/MainBackground
+      guid: f697434d5e6abc54b90ddf8d498b6327
+    - name: Clinik
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7d72dcf1581ce7642b71b4d90155d51e
+    - name: vs1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: 0233053213e7faf4b86bf8068d0b815a
+    - name: pn1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: 63e05d096b710f9468aac357f8760ec8
+    - name: pt1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: d7b93b83bc10b0f4fb3a9973d0a3f7a0
+    - name: BSleep
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5e1bb6425e99310418f9ead8f5ac41f9
+    - name: DayKitchen
+      pathPrefix: Backgrounds/MainBackground
+      guid: ebaa60a7158f0c243b75682a4cd8bd3d
+    - name: DayKonstRoom
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7798dfccf5e116542919ace37f10377e
+    - name: NightKonstRoom
+      pathPrefix: Backgrounds/MainBackground
+      guid: 41368b2b69a1b034bb0ca2e8ee66918b
+    - name: NightKitchen
+      pathPrefix: Backgrounds/MainBackground
+      guid: 769e2b4f813afd3429f588193adc7242
+    - name: Podval
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6a73648bd6f0d844a9c05df0aa9676cf
+    - name: bloodOnSnow
+      pathPrefix: Backgrounds/MainBackground
+      guid: 96e7d537c891fbd4cbbd7470332d287e
+    - name: Sled
+      pathPrefix: Backgrounds/MainBackground
+      guid: 36bb2cdb60d4f76439226f60c646cc43
+    - name: DayCar
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3c2fa6d323cb86047af5a5eee0689236
+    - name: NightCar
+      pathPrefix: Backgrounds/MainBackground
+      guid: bdf4616e099b47549909b5e61850f8f4
+    - name: Garaji
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4998f0d71187b2f4aaadf0c3fd823b5b
+    - name: Hands
+      pathPrefix: Backgrounds/MainBackground
+      guid: 89a2f91c1fe16994b8dab0c368661ad5
+    - name: DeadKitty
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1c75975d87d363946a8f8cae5c2f88ba
+    - name: SergEyes
+      pathPrefix: Backgrounds/MainBackground
+      guid: cbcd58d62d8ff404195695650585a484
+    - name: Hole
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2a5a7d811f6b3094ab7b5bedf1de03c5
+    - name: Finger
+      pathPrefix: Backgrounds/MainBackground
+      guid: 96a6825188532e94bb46eaabf40bfa3f
+    - name: Padik
+      pathPrefix: Backgrounds/MainBackground
+      guid: be1e04248dd124045981113ab456f224
+    - name: DayPadik
+      pathPrefix: Backgrounds/MainBackground
+      guid: f1663421d5f1ee64d9e84d845adf2246
+    - name: GlazokS
+      pathPrefix: Backgrounds/MainBackground
+      guid: d437a8a8b59be9c45bcdd6bd1abe00d0
+    - name: Stena
+      pathPrefix: Backgrounds/MainBackground
+      guid: 427e2f4507738e243801e2512b4317e0
+    - name: CoridorS
+      pathPrefix: Backgrounds/MainBackground
+      guid: c11634d040165b44cacd84d8a63df796
+    - name: DayCoridor
+      pathPrefix: Backgrounds/MainBackground
+      guid: 04c9f3654036a6e44b15a32b4f3ecf26
+    - name: NightCoridor
+      pathPrefix: Backgrounds/MainBackground
+      guid: b229b80f41ca6194586a0d2329d9c5f4
+    - name: Pereulok
+      pathPrefix: Backgrounds/MainBackground
+      guid: c9d544292c4a6f94988e5c8153810154
+    - name: PadikDruga
+      pathPrefix: Backgrounds/MainBackground
+      guid: e5808d649e355554c94ec21dd54264b7
+    - name: Ploshadka
+      pathPrefix: Backgrounds/MainBackground
+      guid: df16e7dcea7bc56498584bf503d13f67
+    - name: Morning
+      pathPrefix: Backgrounds/MainBackground
+      guid: c0bcc58a97c1e034c8c9be82d607b3a1
+    - name: Ovrag
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2271b21692bac154bb038ae4d7c08fb5
+    - name: Ploshadka2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 412a0e6ea3a0d5e409b620a716dbb5c2
+    - name: Hands2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 59c12f518a3e39047a7ee69000172dc8
+    - name: V400
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1838777fb3c37634da23b43a3e050387
+    - name: School
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1fe13148bf4b688459354dd32eb86d53
+    - name: ClassRoom
+      pathPrefix: Backgrounds/MainBackground
+      guid: f7ce61f2abedd54468549a8c2795390a
+    - name: HoleSE
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4b4659b3a34273544bb1189959baf5f7
+    - name: GlazokSvE
+      pathPrefix: Backgrounds/MainBackground
+      guid: 60374f38ffbdab9499df533dad78a5c2
+    - name: 1Shkaf
+      pathPrefix: Backgrounds/MainBackground
+      guid: fe5da07dd4ece8344b376e4634c3a8ee
+    - name: Chapter2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 38c15379c9c84144fadbf9439deff899
+    - name: Shkaf
+      pathPrefix: Backgrounds/MainBackground
+      guid: 166b8ca2de8efe54da8a057dbbd07c3c
+    - name: Chapter2M
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6b530d8028545c5458e4932773544657
+    - name: ASchool
+      pathPrefix: Backgrounds/MainBackground
+      guid: d08e80149de0f6546899b5be317675db
+    - name: sr1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: aa42b551b5125a44bbf9ba75f7bfe8ae
+    - name: vt1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: ec8222fe4db72034eacfdd5eb860b210
+    - name: V1600
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6a7f5e860d6b63d408551d9193a2a768
+    - name: BBDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9a56c292ca79c8547a1ddac417e64b97
+    - name: BBDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3aa11385b8bcddf42a98879b1ca7bde0
+    - name: BBDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: e66fe75646092d8408e90f9023e7fe3f
+    - name: BBGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: ec7bbefd3b6e3ec4784fa9f0b36c8e01
+    - name: BBGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 68644237f98152042b9ce963d71361fc
+    - name: BBGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 98cf2a99d1ac27f4b811a2bdbc296c01
+    - name: BBNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: cdb5b58a0f6f90a4a83f191439808fe4
+    - name: BBSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2a0022648b60c9449b2261b5640c09ca
+    - name: BBSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5730cf0462ae630419d6f0f986eebf6f
+    - name: BBSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: d305f4d587759954487f05d79af8ea64
+    - name: BDDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6b39f9b4435c4fd4ea7fdffc72cb71fc
+    - name: BDDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 991063595d37e13479ca41cb7948fcd6
+    - name: BDDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6472f78499d3556488442985997a4183
+    - name: BDGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 365cba0333a98924793171df4d6ca3ea
+    - name: BDGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9f00cb378087a6d4eb8f908a89d82e7e
+    - name: BDGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 97d7903807d100943924c065aebc3103
+    - name: BDNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8fe6c15fe1ce9f841a0dd12966647823
+    - name: BDSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: f348e51d689e8b1498c7442f3b54f25e
+    - name: BDSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 46fc6d4705344654b955e7f69c58db72
+    - name: BDSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 595dfc5dc166cf04b8b326a91bb6fb25
+    - name: BNNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: d3765b2059d156942b47607ec3f4982c
+    - name: GGDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 92c09b02aef9e0d4aa66a4e0d358128a
+    - name: GGDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: a5aa2e1cf874fb74aa1641fef609abfd
+    - name: GGDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 403094f639c59464e8d29d31ce9d8dd4
+    - name: GGGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: c39591d50800f83468d43015d13d55fd
+    - name: GGGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 71861757e9843574d81e944991009b94
+    - name: GGGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9fa5d4bd5925aa5479e5d4c8ceb63b8a
+    - name: GGNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 96dd30574fbfbb6418940e3eac159638
+    - name: GGSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 363feec44d5a39d418e0208d8f752b36
+    - name: GGSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4130531a06f77b04a8db95f5e12262ae
+    - name: GGSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: ffcec30a4d5b4fb4091710027fb26709
+    - name: GNNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: c303813b8877f58439e331902a79f1bd
+    - name: GSDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1a57559b8af0cdf4188a9c3702262b15
+    - name: GSDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5e41055d2b191b04d9664f86d4bc6fd4
+    - name: GSDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: f49250946174233468c3df0d65e2c0c2
+    - name: GSGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8eb406430f7ee9d40a10bf0e24aabaed
+    - name: GSGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8f99b90f46ca7814ea321293191492ba
+    - name: GSGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: a67e605abb091ef4685eb4b25457f29a
+    - name: GSNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 91e17747ce431ff4eb9f9d7b101f748a
+    - name: GSSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: def637f4476fb634db16582d6cfb4cb6
+    - name: GSSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3f6892ea506b56e48ba34864928c17c4
+    - name: GSSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: e37e891fd0314ac40a0eddfb17d1d596
+    - name: SGDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: f382b7c01184d1e4c9049f315031d0a6
+    - name: SGDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9ebb24d9fbd1e734f87cac01b51a2786
+    - name: SGDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 659b7b5d0eed44f4db32b4dfc113547d
+    - name: SGGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2dbfac953740be24fb83dc49a1fa59d8
+    - name: SGGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: dd3fb34b8f32d064395d2f8217bc6684
+    - name: SGGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: c4d7a01b8b5614c409f1ef7d6530344d
+    - name: SGNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7d9d620d18df4894fb242626dddfb6b3
+    - name: SGSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: cd45105acc9c2fa41a1870f0ade43b96
+    - name: SGSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: dcff96881501de141adf244cd6780a3b
+    - name: SGSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7bfd1acedc234b348ad57c362b9107f1
+    - name: SNNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: c138a8d317b113848ae2c7b27291af1e
+    - name: SSDB
+      pathPrefix: Backgrounds/MainBackground
+      guid: bcdd5b858db5515429d0814a216ab1ec
+    - name: SSDG
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6cf6d83874f65e347bea0d4a6f6bcd6e
+    - name: SSDN
+      pathPrefix: Backgrounds/MainBackground
+      guid: c27a0134bb1c71f43b3e7a2c88b4c06d
+    - name: SSGB
+      pathPrefix: Backgrounds/MainBackground
+      guid: 13b86700000011c48b9154c900bfbf8c
+    - name: SSGG
+      pathPrefix: Backgrounds/MainBackground
+      guid: af9734387a4b74740a3c09e2f975e46c
+    - name: SSGN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6f7978eb702f76c4ea7857f6e59a27d9
+    - name: SSNN
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2922e0b626d2a5f44b941badb3a3df33
+    - name: SSSB
+      pathPrefix: Backgrounds/MainBackground
+      guid: addb06347078a40498ec65b6638f6922
+    - name: SSSG
+      pathPrefix: Backgrounds/MainBackground
+      guid: f9494122d37a1c548a9578e4f7c481c1
+    - name: SSSN
+      pathPrefix: Backgrounds/MainBackground
+      guid: e037ed86005aef94e9d44c24918b4218
+    - name: Jija
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6028a37483c8183468f4bc100d23a766
+    - name: JijaSOL
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6137536f447df5046996bb1a3da9d078
+    - name: RUKI
+      pathPrefix: Backgrounds/MainBackground
+      guid: e14d354dd86ea834d99005d837b93cab
+    - name: Begi
+      pathPrefix: Backgrounds/MainBackground
+      guid: b5b19f01246e4df4582edd2ec8a88e59
+    - name: Sheya
+      pathPrefix: Backgrounds/MainBackground
+      guid: 99e39663e00e9234c8d0df98e8caab61
+    - name: SergEyesS
+      pathPrefix: Backgrounds/MainBackground
+      guid: d62f0df1701d66746990ab5b6896c175
+    - name: Svetish
+      pathPrefix: Backgrounds/MainBackground
+      guid: c7e5ae087011c6043bf96873b92ec43f
+    - name: Menu
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6efb388540720444190d165fae500b57
+    - name: Obr1
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8194cc4214aface4caf2bcb605eba2f5
+    - name: Obr2
+      pathPrefix: Backgrounds/MainBackground
+      guid: b27ddf9dda76f5a47bbf2f24102a4d62
+    - name: Obr3
+      pathPrefix: Backgrounds/MainBackground
+      guid: 37477834c4eef5f49b48185e4afca179
+    - name: Chp1
+      pathPrefix: Backgrounds/MainBackground
+      guid: 824905b9fb28a7b48a73d57a0af9be76
+    - name: dvor
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3768b9c3f0b2ed54aa95d1c260651b53
+    - name: Holee
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2db80edf304fb1c49a12c043e7654413
+    - name: Golova
+      pathPrefix: Backgrounds/MainBackground
+      guid: bf402a97d965e7b4a940ccd63a5357eb
+    - name: rep
+      pathPrefix: Backgrounds/MainBackground
+      guid: a3b388f4022228e4da2f24646a34dc8a
+    - name: q3
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3f301a464c9f94a47b5a05c29b9b6650
+    - name: q2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 397c84d774b09c1409df406ddffba9e4
+    - name: q1
+      pathPrefix: Backgrounds/MainBackground
+      guid: 15f5df98245bb5947b8b4240a74ab910
+    - name: q4
+      pathPrefix: Backgrounds/MainBackground
+      guid: 775339bccf666b244843b8a6cf449431
+    - name: Skor
+      pathPrefix: Backgrounds/MainBackground
+      guid: 48194342b09b4cc4ea852730c9cf1161
+    - name: Steklo
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5930e717c010ddc4090bf23254a5e9fd
+    - name: karta
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3db009e4bdea2fa48a4c3bffe3702be0
+    - name: Nkomn
+      pathPrefix: Backgrounds/MainBackground
+      guid: 0f02832109997904e9cff81f172991ff
+    - name: Book
+      pathPrefix: Backgrounds/MainBackground
+      guid: 226d043284b3db942b3d2cc3db08a5d4
+    - name: ClosedHole
+      pathPrefix: Backgrounds/MainBackground
+      guid: f8408ee0ac2671d4cb6862270f6f2d5d
+  - Id: Characters/431817bc-4dcb-46a1-a082-2c157e6dca76
+    Resources:
+    - name: Crown
+      pathPrefix: Characters/Gopnicks
+      guid: c3b317dd3a10883489943ef1b87d1c40
+    - name: OtherBlue
+      pathPrefix: Characters/Gopnicks
+      guid: 47ea0e8c827d4af42b29d83018bd4277
+  - Id: Characters/552e830b-5a58-451e-91c4-3f3095f2f5d2
+    Resources:
+    - name: Home
+      pathPrefix: Characters/Dad
+      guid: 80ef9661aab16fa428f92f9ef9e5cdb1
+    - name: Winter
+      pathPrefix: Characters/Dad
+      guid: c071d3c1ad121634fa117cb981a88036
+  - Id: Characters/0e80b82c-6e00-4513-b2ab-2b60451e4a92
+    Resources:
+    - name: KidWinter
+      pathPrefix: Characters/Friend
+      guid: 4b13c9ac47cf01949839b99a349b22b9
+    - name: Phone
+      pathPrefix: Characters/Friend
+      guid: 8e89f1c34239ca440910d758b56dd989
+    - name: Rats
+      pathPrefix: Characters/Friend
+      guid: 72a0aedc5aa25384d9800ea0cb9d7bac
+    - name: School
+      pathPrefix: Characters/Friend
+      guid: 34b1fe1900a9c0a4db0eba0871cade29
+  - Id: Characters/33e563bd-b0c8-4393-8fe0-4830e15355ff
+    Resources:
+    - name: KidWinter
+      pathPrefix: Characters/Billy
+      guid: defafe34960bcc244890968b68a886b8
+  - Id: Characters/aba90a92-bd6b-4e08-9f3e-33967c28bb82
+    Resources:
+    - name: 1
+      pathPrefix: Characters/Vrach
+      guid: a7c1c936512ed024a86f9b8ce443b012
+  - Id: Characters/e8aa8db0-18ac-497e-b24f-d7e59bd4c240
+    Resources:
+    - name: Winter
+      pathPrefix: Characters/Babka
+      guid: c1272a7a851a1474093ce96df5fa8f85
+  - Id: Characters/3c0363d3-b778-4c8e-833f-bfb6c5e3dc6d
+    Resources:
+    - name: Winter
+      pathPrefix: Characters/Serg
+      guid: 02f71e0a227bc864ab274b1b54563323
+    - name: Home
+      pathPrefix: Characters/Serg
+      guid: 2b8297bfc73cc454aadd74a66afad60f
+    - name: Over
+      pathPrefix: Characters/Serg
+      guid: d9de7131fd3703a4282f1ec7b2c4abb4
+  - Id: Characters/a6ee326a-494b-4689-8b3b-73ea107f5d94
+    Resources:
+    - name: Home
+      pathPrefix: Characters/Sveta
+      guid: b8f06f03331a2e94faac064bd12f5095
+    - name: Winter
+      pathPrefix: Characters/Sveta
+      guid: 599886c7ae12b2a45bdb0d2f9c642442
+    - name: SH
+      pathPrefix: Characters/Sveta
+      guid: bb57cf3bdb2b9894d962fb9671c8081b
+    - name: SW
+      pathPrefix: Characters/Sveta
+      guid: b58e1f7ff7d3be1498a9076a60a09c71
+  - Id: Characters/e27347ea-2b6a-4df2-adfe-2ada70d55a55
+    Resources:
+    - name: Winter
+      pathPrefix: Characters/Mom
+      guid: 90849bda690e5a44e957f040d39a1480
+    - name: Home
+      pathPrefix: Characters/Mom
+      guid: 34d997a8980b8994caa309ff8ed919c5
+  - Id: Characters/85cf2182-71a4-4fa4-a0b5-2317f25bd644
+    Resources:
+    - name: Phone
+      pathPrefix: Characters/Mil
+      guid: 8e89f1c34239ca440910d758b56dd989
+    - name: Hum
+      pathPrefix: Characters/Mil
+      guid: f63a7edec5eb06c4fb651d7546b8c816
+  - Id: Audio
+    Resources:
+    - name: 123
+      pathPrefix: Audio
+      guid: c91b9fd6838f364448dfe0cb1521fa12
+    - name: Hearth
+      pathPrefix: Audio
+      guid: 89e0ea0de58105e4e9ee959f1d3ef7dd
+    - name: Creepy
+      pathPrefix: Audio
+      guid: ecb077f681f93f042a95ba0e44d372fa
+    - name: Rain
+      pathPrefix: Audio
+      guid: 6f0f8324827d4b746a4e4cc35d61ef8d
+    - name: reps
+      pathPrefix: Audio
+      guid: 520a41e824038de429b9896d3ccd94c7
+    - name: main
+      pathPrefix: Audio
+      guid: 8dd20c88d8d0cdc428208dfec82cdea3
+    - name: 0
+      pathPrefix: Audio
+      guid: afaf929e9e1288746b7d9e34d588bc5a
+    - name: 1
+      pathPrefix: Audio
+      guid: 5e2fa8b4017b2a4499064b266565a114
+    - name: 2
+      pathPrefix: Audio
+      guid: e96d05a009b7de44181f89fd10c77133
+    - name: 3
+      pathPrefix: Audio
+      guid: 7d0e333f81a801e42926a6b381282d48
+    - name: 4
+      pathPrefix: Audio
+      guid: 5f700db83241bde419d38fa8b9610744
+    - name: shum
+      pathPrefix: Audio
+      guid: 9d00f5263e6450c4b89f08f1675e20e0
+    - name: miau
+      pathPrefix: Audio
+      guid: d5f23979005588645a70a73aae22e1fc
+    - name: kostya
+      pathPrefix: Audio
+      guid: 53ef0a0c212abf14f850def06560a24a
+    - name: brush
+      pathPrefix: Audio
+      guid: 71fd7f46943c84047b635c2846ae31b4
+    - name: Sbrush
+      pathPrefix: Audio
+      guid: de765fd939f47a6498c7c90669f32549
+    - name: Scream
+      pathPrefix: Audio
+      guid: f37630c96cabb6a4dafbb1500fd252fd
+    - name: Shag
+      pathPrefix: Audio
+      guid: 359eeb66fa3bae945a5c3f68cbc63c80
+  - Id: Movies
+    Resources:
+    - name: Scream1
+      pathPrefix: Movies
+      guid: 9d2056d7e8757ab4ba932eab06ae8254
+  - Id: Characters/efb9db67-f09f-48fd-9f60-b18b859420c8
+    Resources:
+    - name: Child
+      pathPrefix: Characters/Tsuk
+      guid: d626fe3ede7d704488f3c7ca8a47dd90
+    - name: School
+      pathPrefix: Characters/Tsuk
+      guid: 89efcae552d300b459fd415ed5ceeef4
+    - name: Demon
+      pathPrefix: Characters/Tsuk
+      guid: 3586d0a4eb7734143bf56b43fd1b2bfc
+  - Id: Characters/45bacd2a-77fb-4065-a391-00a50b00abe5
+    Resources:
+    - name: 1
+      pathPrefix: Characters/Mentor
+      guid: 414b085c37682d6419e6423ac2856e88
+  - Id: Characters/0f3be701-ef78-4135-8d7b-8ed42aeae087
+    Resources:
+    - name: 1
+      pathPrefix: Characters/Svash
+      guid: f279853efb9f53043a13636119b36d67

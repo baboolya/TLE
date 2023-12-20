@@ -1,0 +1,8 @@
+
+@back BBNN
+@i
+
+@goto BBGN if:G_cat==1
+@goto BBDN if:G_cat==0
+@goto BBSN if:G_cat==2
+@stop

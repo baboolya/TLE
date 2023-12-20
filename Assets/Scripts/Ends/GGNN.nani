@@ -1,0 +1,8 @@
+
+@back GGNN
+@i
+
+@goto GGGN if:G_cat==1
+@goto GGDN if:G_cat==0
+@goto GGSN if:G_cat==2
+@stop

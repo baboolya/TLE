@@ -1,0 +1,6 @@
+
+
+@save
+@choice Покушать goto:0070202
+@choice "Что за окном?" goto:070203
+@stop

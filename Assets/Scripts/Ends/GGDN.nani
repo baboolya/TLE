@@ -1,0 +1,7 @@
+
+@back GGDN
+@i
+
+@goto GGDG if:G_Billy==1
+@goto GGDB if:G_Billy==0
+@stop

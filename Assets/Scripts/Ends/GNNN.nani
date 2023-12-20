@@ -1,0 +1,7 @@
+
+@back GNNN
+@i
+
+@goto GSNN if:G_Sveta==1
+@goto GGNN if:G_Sveta==0
+@stop

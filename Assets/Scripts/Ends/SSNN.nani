@@ -1,0 +1,8 @@
+
+@back SSNN
+@i
+
+@goto SSGN if:G_cat==1
+@goto SSDN if:G_cat==0
+@goto SSSN if:G_cat==2
+@stop

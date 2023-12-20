@@ -1,0 +1,5 @@
+@set G_Mom=1
+Konst: -"Хорошо, мам"
+@save
+@goto b16
+@stop

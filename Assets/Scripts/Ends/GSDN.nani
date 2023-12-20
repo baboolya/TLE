@@ -1,0 +1,7 @@
+
+@back GSDN
+@i
+
+@goto GSDG if:G_Billy==1
+@goto GSDB if:G_Billy==0
+@stop

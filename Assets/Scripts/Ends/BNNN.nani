@@ -1,0 +1,7 @@
+
+@back BNNN
+@i
+
+@goto BBNN if:G_Sveta==1
+@goto BDNN if:G_Sveta==0
+@stop

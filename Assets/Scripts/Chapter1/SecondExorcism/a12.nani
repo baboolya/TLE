@@ -1,0 +1,12 @@
+
+@hideAll
+@sfx Creepy loop:true
+@back CoridorS
+@i
+Сосед догоняет вас и с силой через весь коридор забрасывает вас в комнату
+
+@back DayKonstRoom
+@save
+@choice "Подняться и спрятаться в шкаф" goto:a121
+@choice "Принять смерть" goto:a122
+@stop
