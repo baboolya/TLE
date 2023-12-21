@@ -755,6 +755,9 @@ MonoBehaviour:
     - name: tomas
       pathPrefix: Scripts
       guid: 8f05717565f98c4489fb5bc9ae2b69a8
+    - name: rewDialog
+      pathPrefix: Scripts
+      guid: 544b5a015aea9c3439d04566c77c1dcc
   - Id: Backgrounds/cef5c86c-3ba7-4902-babe-c62c5ee9dea8
     Resources:
     - name: AfterSchool
