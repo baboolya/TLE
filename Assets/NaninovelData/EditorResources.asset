@@ -1342,3 +1342,8 @@ MonoBehaviour:
     - name: 1
       pathPrefix: Characters/Svash
       guid: f279853efb9f53043a13636119b36d67
+  - Id: ChoiceHandlers/db68bce7-c7b8-42f0-9933-e5d85e0a4f04
+    Resources:
+    - name: RewardButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 3cc5c28dde576497d828dcb2ed02ac0c

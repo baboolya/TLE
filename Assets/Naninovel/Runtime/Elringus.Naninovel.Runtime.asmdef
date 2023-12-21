@@ -1,5 +1,6 @@
 {
     "name": "Elringus.Naninovel.Runtime",
+    "rootNamespace": "",
     "references": [
         "GUID:26c3782e36cc1874587ef07692accab2",
         "GUID:88c54edcfcc58e24c8b704cdd7d780e1",
@@ -8,7 +9,8 @@
         "GUID:9e24947de15b9834991c9d8411ea37cf",
         "GUID:84651a3751eca9349aac36a66bba901b",
         "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:15fc0a57446b3144c949da3e2b9737a9"
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:ef7e0e3eb213f324c87b70a782844fb6"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
