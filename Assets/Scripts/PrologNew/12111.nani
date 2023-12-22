@@ -6,5 +6,5 @@ Konst: -"Отлично! Я назову его...."
 
 @save
 @choice Томас goto:tomas
-@choice "Придумать имя" goto:nameCat
+@choice "Придумать имя" handler:RewardButtonList goto:nameCat
 @stop

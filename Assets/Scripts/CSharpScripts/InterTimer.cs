@@ -1,8 +1,6 @@
 using System.Collections;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using Agava.YandexGames;
 using Agava.YandexMetrica;
 using Agava.WebUtility;
@@ -10,6 +8,8 @@ using Agava.WebUtility;
 public class InterTimer : MonoBehaviour
 {
     [SerializeField] private float _waitTime;
+    [SerializeField] private float _adsTimer;
+    [SerializeField] private GameObject _adsPannel;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
@@ -34,13 +34,20 @@ public class InterTimer : MonoBehaviour
 
     private IEnumerator Timer()
     {
-        var WaitForAnyMinutes = new WaitForSeconds(_waitTime);
+        float adsTime = _waitTime - _adsTimer;
+        var waitForAnyMinutes = new WaitForSeconds(adsTime);
+        var waitForAnySeconds = new WaitForSeconds(_adsTimer);
 
         while (true)
         {
-            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);
+            _adsPannel.SetActive(true);
 
-            yield return WaitForAnyMinutes;
+            yield return waitForAnySeconds;
+
+            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);
+            _adsPannel.SetActive(false);
+
+            yield return waitForAnyMinutes;
         }
     }
 

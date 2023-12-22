@@ -758,6 +758,21 @@ MonoBehaviour:
     - name: rewDialog
       pathPrefix: Scripts
       guid: 544b5a015aea9c3439d04566c77c1dcc
+    - name: RealEnd
+      pathPrefix: Scripts
+      guid: 9ff6d964cfa09814a859e62aadbad592
+    - name: RewObr2
+      pathPrefix: Scripts
+      guid: e5fcebe89700e424db5a2f9b2317f7d6
+    - name: RewObr3
+      pathPrefix: Scripts
+      guid: ffbeafa41fb26f34c92d8d2efbabcc7d
+    - name: RewObr3Op
+      pathPrefix: Scripts
+      guid: 3afa6c9d452610848b6b58af19185768
+    - name: d021
+      pathPrefix: Scripts
+      guid: 552613b789d32c0458302abdec30970a
   - Id: Backgrounds/cef5c86c-3ba7-4902-babe-c62c5ee9dea8
     Resources:
     - name: AfterSchool
@@ -1119,7 +1134,7 @@ MonoBehaviour:
       guid: c7e5ae087011c6043bf96873b92ec43f
     - name: Menu
       pathPrefix: Backgrounds/MainBackground
-      guid: 6efb388540720444190d165fae500b57
+      guid: 8252f209fe01f2547b1769c4097f361a
     - name: Obr1
       pathPrefix: Backgrounds/MainBackground
       guid: 8194cc4214aface4caf2bcb605eba2f5
@@ -1144,16 +1159,16 @@ MonoBehaviour:
     - name: rep
       pathPrefix: Backgrounds/MainBackground
       guid: a3b388f4022228e4da2f24646a34dc8a
-    - name: q3
+    - name: postr
       pathPrefix: Backgrounds/MainBackground
       guid: 3f301a464c9f94a47b5a05c29b9b6650
-    - name: q2
+    - name: demons
       pathPrefix: Backgrounds/MainBackground
       guid: 397c84d774b09c1409df406ddffba9e4
-    - name: q1
+    - name: shkol
       pathPrefix: Backgrounds/MainBackground
       guid: 15f5df98245bb5947b8b4240a74ab910
-    - name: q4
+    - name: na4
       pathPrefix: Backgrounds/MainBackground
       guid: 775339bccf666b244843b8a6cf449431
     - name: Skor
@@ -1280,21 +1295,21 @@ MonoBehaviour:
     - name: main
       pathPrefix: Audio
       guid: 8dd20c88d8d0cdc428208dfec82cdea3
-    - name: 0
+    - name: postr
       pathPrefix: Audio
-      guid: afaf929e9e1288746b7d9e34d588bc5a
-    - name: 1
+      guid: 01e14065733f5894a91722b0f5b05b4b
+    - name: demons
       pathPrefix: Audio
-      guid: 5e2fa8b4017b2a4499064b266565a114
-    - name: 2
+      guid: 678be5028ae3c7045810a35ff8f5ed25
+    - name: jertv
       pathPrefix: Audio
-      guid: e96d05a009b7de44181f89fd10c77133
-    - name: 3
+      guid: 1047fd792ec31a340bf56e3dfd760257
+    - name: shkol
       pathPrefix: Audio
-      guid: 7d0e333f81a801e42926a6b381282d48
-    - name: 4
+      guid: eeb1d9e7643cb694f978d9f82f9619e5
+    - name: na4
       pathPrefix: Audio
-      guid: 5f700db83241bde419d38fa8b9610744
+      guid: 11c1566d849be5b47b307b62f0371c4e
     - name: shum
       pathPrefix: Audio
       guid: 9d00f5263e6450c4b89f08f1675e20e0
@@ -1316,6 +1331,9 @@ MonoBehaviour:
     - name: Shag
       pathPrefix: Audio
       guid: 359eeb66fa3bae945a5c3f68cbc63c80
+    - name: epic
+      pathPrefix: Audio
+      guid: 9139ea53cfc783045808b3f4b4ce395d
   - Id: Movies
     Resources:
     - name: Scream1

@@ -28,5 +28,5 @@ Konst: -"Вы сели у двери и дальше помните только
 @stopSfx 
 @save
 @bgm 123
-@goto 0C2
+@choice Продолжить handler:RewardButtonList goto:0C2
 @stop

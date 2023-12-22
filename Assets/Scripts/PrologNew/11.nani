@@ -1,5 +1,4 @@
 @despawn Snow
-@bgm 123
 @back Podval
 Konst: -"Ну, и где они?"
 Friend: -"Клянусь, они были здесь, в белом старом ящике, когда я уходил."
@@ -36,5 +35,5 @@ Friend: -"Ах ты сволочь!"
 @hide Billy
 @save
 @choice "Беги за ним! Я пока осмотрю котят" goto:1q
-@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:1q
+@choice "Пусть бежит! Вдруг понадобиться твоя помощь" handler:RewardButtonList goto:1q
 @stop

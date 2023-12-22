@@ -28,6 +28,7 @@ namespace Naninovel.UI
         public event Action<ChoiceState> OnChoice;
 
         protected virtual List<ChoiceHandlerButton> ChoiceButtons { get; } = new List<ChoiceHandlerButton>();
+        protected virtual List<ChoiceHandlerButton> RewardChoiceButtons { get; } = new List<ChoiceHandlerButton>();
         protected virtual RectTransform ButtonsContainer => buttonsContainer;
         protected virtual ChoiceHandlerButton DefaultButtonPrefab => defaultButtonPrefab;
         protected virtual bool FocusChoiceButtons => focusChoiceButtons;
@@ -38,6 +39,8 @@ namespace Naninovel.UI
         [SerializeField] private ChoiceHandlerButton defaultButtonPrefab;
         [Tooltip("Whether to focus added choice buttons for keyboard and gamepad control.")]
         [SerializeField] private bool focusChoiceButtons = true;
+
+        [SerializeField] private RewardHandlerPanel _rewardHandlerPanel;
 
         private IResourceLoader<GameObject> customButtonLoader;
         private IBacklogUI backlogUI;
@@ -86,7 +89,7 @@ namespace Naninovel.UI
         {
             var buttons = ChoiceButtons.FindAll(c => c.ChoiceState.Id == id);
             if (buttons.Count == 0) return;
-
+            
             foreach (var button in buttons)
             {
                 if (button) Destroy(button.gameObject);
@@ -100,6 +103,7 @@ namespace Naninovel.UI
         public virtual void RemoveAllChoiceButtonsDelayed ()
         {
             ChoiceButtons?.ForEach(HideIfValid);
+            
             removeAllButtonsPending = true;
 
             void HideIfValid (ChoiceHandlerButton button)
@@ -110,8 +114,13 @@ namespace Naninovel.UI
 
         public virtual void RemoveAllChoiceButtons ()
         {
-            for (int i = 0; i < ChoiceButtons.Count; i++)
+            RewardHandlerPanel rewardHandlePanel = FindObjectOfType<RewardHandlerPanel>();
+
+            rewardHandlePanel.RemoveAllChoiceButtons();
+
+            for (int i = 0; i < ChoiceButtons.Count; i++) 
                 Destroy(ChoiceButtons[i].gameObject);
+
             ChoiceButtons.Clear();
         }
 

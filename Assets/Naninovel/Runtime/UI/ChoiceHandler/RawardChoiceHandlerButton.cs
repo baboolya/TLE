@@ -9,7 +9,8 @@ namespace Naninovel.UI
     {
         protected override void OnButtonClick()
         {
-            VideoAd.Show();
+            ///VideoAd.Show();
+            Debug.Log("Реклама");
         }
     }
 }

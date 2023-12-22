@@ -1,8 +1,5 @@
 
 @hideAll
 @save
-@goto BNNN if:G_Serg==0||G_Mom==1
-@goto GNNN if:G_Serg==1&&G_Mom==0
-@goto SNNN if:G_Serg==2&&G_Mom==0
-
+@choice "Конец" handler:RewardButtonList goto:RealEnd
 @stop

@@ -1,5 +1,5 @@
 
 @back Menu
 @spawn Rain
-@bgm Rain volume:2
+@bgm Rain volume:0.7
 @stop

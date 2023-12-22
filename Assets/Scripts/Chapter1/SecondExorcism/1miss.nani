@@ -18,7 +18,7 @@ Svash: -"Дабы благоволил ты сокрушить врагов Св
 @hideAll
 @back HoleSE
 @save
-@choice Молчать goto:2miss
+@choice Молчать goto:2miss handler:RewardButtonList
 @choice "Дабы благоволил ты сокрушить врагов Святыни, молим тебя, услышь нас." goto:d21
 @choice "Изгоняем тебя, дух всякой нечистоты, всякая иная сила..." goto:2miss
 @stop
