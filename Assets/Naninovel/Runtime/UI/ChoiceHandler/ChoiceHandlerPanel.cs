@@ -114,10 +114,21 @@ namespace Naninovel.UI
 
         public virtual void RemoveAllChoiceButtons ()
         {
+            for (int i = 0; i < ChoiceButtons.Count; i++) 
+                Destroy(ChoiceButtons[i].gameObject);
+
+            ChoiceButtons.Clear();
+            
             RewardHandlerPanel rewardHandlePanel = FindObjectOfType<RewardHandlerPanel>();
+            
+            if(rewardHandlePanel == null)
+                return;
+            
+            rewardHandlePanel.RemoveThisTypeOfChoiceButtons();
+        }
 
-            rewardHandlePanel.RemoveAllChoiceButtons();
-
+        public void RemoveThisTypeOfChoiceButtons()
+        {
             for (int i = 0; i < ChoiceButtons.Count; i++) 
                 Destroy(ChoiceButtons[i].gameObject);
 

@@ -1,18 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
 namespace Naninovel.UI
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using UnityEngine;
-    using UnityEngine.EventSystems;
-
     public class RewardHandlerPanel : ChoiceHandlerPanel
     {
+        public override void RemoveAllChoiceButtonsDelayed()
+        {
+            base.RemoveAllChoiceButtonsDelayed();
+            
+            ChoiceHandlerPanel[] choiceHandlerPanel = FindObjectsOfType<ChoiceHandlerPanel>();
+            
+            foreach (var item in choiceHandlerPanel)
+            {
+                if(item != null && item != this)
+                    item.RemoveAllChoiceButtons();
+            }
+        }
+        
         public override void RemoveAllChoiceButtons()
         {
-            ChoiceHandlerPanel choiceHandlerPanel = FindObjectOfType<ChoiceHandlerPanel>();
+            for (int i = 0; i < ChoiceButtons.Count; i++) 
+                Destroy(ChoiceButtons[i].gameObject);
 
-            choiceHandlerPanel.RemoveAllChoiceButtons();
+            ChoiceButtons.Clear();
+            
+            ChoiceHandlerPanel[] choiceHandlerPanel = FindObjectsOfType<ChoiceHandlerPanel>();
+            
+            foreach (var item in choiceHandlerPanel)
+            {
+                if(item != null && item != this)
+                    item.RemoveAllChoiceButtons();
+            }
         }
     }
 }
