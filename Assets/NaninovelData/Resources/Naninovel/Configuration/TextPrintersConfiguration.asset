@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610509a41f8e448419a7e1a6122c05c0, type: 3}
   m_Name: TextPrintersConfiguration
   m_EditorClassIdentifier: 
-  DefaultDuration: 0.35
+  DefaultDuration: 0.4
   DefaultEasing: 0
   AutoShowOnModify: 0
   SceneOrigin: {x: 0.5, y: 0}
   ZOffset: 0
   ZStep: 0
   DefaultPrinterId: Dialogue
-  DefaultBaseRevealSpeed: 0.5
+  DefaultBaseRevealSpeed: 0.498
   DefaultBaseAutoDelay: 0.5
-  MaxRevealDelay: 0.06
+  MaxRevealDelay: 0.026
   MaxAutoWaitDelay: 0.02
   ScaleAutoWait: 1
   DefaultMetadata:

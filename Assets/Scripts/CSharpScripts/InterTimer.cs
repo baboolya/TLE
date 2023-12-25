@@ -14,9 +14,10 @@ public class InterTimer : MonoBehaviour
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
     private Action<string> _adErrorMessage;
-
+    private bool _isFirstAd;
     private void Start()
     {
+        _isFirstAd = true;
         StartCoroutine(Timer());
     }
 
@@ -35,17 +36,21 @@ public class InterTimer : MonoBehaviour
     private IEnumerator Timer()
     {
         float adsTime = _waitTime - _adsTimer;
+        
         var waitForAnyMinutes = new WaitForSeconds(adsTime);
         var waitForAnySeconds = new WaitForSeconds(_adsTimer);
 
         while (true)
         {
-            _adsPannel.SetActive(true);
+            if(_isFirstAd == false)
+                _adsPannel.gameObject.SetActive(true);
 
             yield return waitForAnySeconds;
 
             InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);
-            _adsPannel.SetActive(false);
+
+            _isFirstAd = true;
+            _adsPannel.gameObject.SetActive(false);
 
             yield return waitForAnyMinutes;
         }
@@ -60,6 +65,7 @@ public class InterTimer : MonoBehaviour
     
     private void OnInterstitialAdClose(bool result)
     {
+        
         AudioListener.pause = false;
         AudioListener.volume = 1f;
         Time.timeScale = 1f;

@@ -15,6 +15,6 @@ MonoBehaviour:
   DefaultSkipMode: 0
   SkipTimeScale: 10
   MinAutoPlayDelay: 3
-  CompleteOnContinue: 1
+  CompleteOnContinue: 0
   ShowDebugOnInit: 0
   WaitByDefault: 1

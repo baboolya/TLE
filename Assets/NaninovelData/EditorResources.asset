@@ -773,6 +773,12 @@ MonoBehaviour:
     - name: d021
       pathPrefix: Scripts
       guid: 552613b789d32c0458302abdec30970a
+    - name: Rigik
+      pathPrefix: Scripts
+      guid: 915c7ec7872af1549bae2e8be2b730bc
+    - name: RewObr1
+      pathPrefix: Scripts
+      guid: 2a10bf8168e5fdc46ae585d029706b15
   - Id: Backgrounds/cef5c86c-3ba7-4902-babe-c62c5ee9dea8
     Resources:
     - name: AfterSchool
@@ -1134,7 +1140,7 @@ MonoBehaviour:
       guid: c7e5ae087011c6043bf96873b92ec43f
     - name: Menu
       pathPrefix: Backgrounds/MainBackground
-      guid: 8252f209fe01f2547b1769c4097f361a
+      guid: ad09afdfd14589d43a8ca6f3a5f1bdf8
     - name: Obr1
       pathPrefix: Backgrounds/MainBackground
       guid: 8194cc4214aface4caf2bcb605eba2f5
@@ -1201,10 +1207,10 @@ MonoBehaviour:
     Resources:
     - name: Home
       pathPrefix: Characters/Dad
-      guid: 80ef9661aab16fa428f92f9ef9e5cdb1
+      guid: 67e38607357316d4ca66156344d38db9
     - name: Winter
       pathPrefix: Characters/Dad
-      guid: c071d3c1ad121634fa117cb981a88036
+      guid: 78a1c8576c88f5a45aef29b136d2a0fb
   - Id: Characters/0e80b82c-6e00-4513-b2ab-2b60451e4a92
     Resources:
     - name: KidWinter

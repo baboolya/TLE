@@ -1,4 +1,4 @@
-
-@input G_name summary:"Введите имя котенка..."
+@save
+@set G_name="Малыш Ричи"
 @goto 0121111
 @stop

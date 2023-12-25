@@ -1,6 +1,7 @@
 
-Вы вернулись домой. В машине вы всячески закутывали котенка, чтобы он не замерз 
+@save
 @back NightKonstRoom
+Вы вернулись домой. В машине вы всячески закутывали котенка, чтобы он не замерз 
 @char Konst.KidListen pos:20,0
 @char Dad.Home look:right pos:60,0
 @char Mom.Home pos:80,0
