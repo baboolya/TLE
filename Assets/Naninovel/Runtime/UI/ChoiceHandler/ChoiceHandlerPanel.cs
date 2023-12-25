@@ -69,6 +69,7 @@ namespace Naninovel.UI
             choiceButton.Initialize(choice);
             choiceButton.Show();
             choiceButton.OnButtonClicked += () => OnChoice?.Invoke(choice);
+            Debug.Log(choiceButton.name);
 
             if (backlogUI != null)
             {
@@ -112,7 +113,7 @@ namespace Naninovel.UI
             }
         }
 
-        public virtual void RemoveAllChoiceButtons ()
+        public virtual void RemoveAllChoiceButtons()
         {
             for (int i = 0; i < ChoiceButtons.Count; i++) 
                 Destroy(ChoiceButtons[i].gameObject);

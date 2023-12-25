@@ -31,7 +31,7 @@ namespace Naninovel
 
         protected virtual void OnButtonClick () { }
 
-        private void InvokeOnButtonClicked ()
+        protected virtual void InvokeOnButtonClicked ()
         {
             OnButtonClicked?.Invoke();
         }
