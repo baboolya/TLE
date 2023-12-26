@@ -16,6 +16,7 @@ namespace Naninovel.UI
             
             foreach (var item in choiceHandlerPanel)
             {
+                Debug.Log("RewAllRemoveDel " + item.name);
                 if(item != null && item != this)
                     item.RemoveAllChoiceButtons();
             }
@@ -23,11 +24,12 @@ namespace Naninovel.UI
         
         public override void RemoveAllChoiceButtons()
         {
-            for (int i = 0; i < ChoiceButtons.Count; i++) 
+            for (int i = 0; i < ChoiceButtons.Count; i++)
+            {
+                Debug.Log("RewAllREmove " + ChoiceButtons[i].name);
                 Destroy(ChoiceButtons[i].gameObject);
-
-            ChoiceButtons.Clear();
-            
+            }
+         
             ChoiceHandlerPanel[] choiceHandlerPanel = FindObjectsOfType<ChoiceHandlerPanel>();
             
             foreach (var item in choiceHandlerPanel)
@@ -35,6 +37,9 @@ namespace Naninovel.UI
                 if(item != null && item != this)
                     item.RemoveAllChoiceButtons();
             }
+
+            ChoiceButtons.Clear();
+            Debug.Log("CLEAR RRACB");
         }
     }
 }

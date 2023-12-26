@@ -44,12 +44,12 @@ public class InterTimer : MonoBehaviour
         {
             if(_isFirstAd == false)
                 _adsPannel.gameObject.SetActive(true);
+	    else
+		_isFirstAd = false;
 
             yield return waitForAnySeconds;
 
-            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);
-
-            _isFirstAd = true;
+            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);           
             _adsPannel.gameObject.SetActive(false);
 
             yield return waitForAnyMinutes;

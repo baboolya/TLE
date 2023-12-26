@@ -69,7 +69,8 @@ namespace Naninovel.UI
             choiceButton.Initialize(choice);
             choiceButton.Show();
             choiceButton.OnButtonClicked += () => OnChoice?.Invoke(choice);
-            Debug.Log(choiceButton.name);
+
+            Debug.Log("ADD_BUTTON "+choiceButton.name);
 
             if (backlogUI != null)
             {
@@ -115,17 +116,22 @@ namespace Naninovel.UI
 
         public virtual void RemoveAllChoiceButtons()
         {
-            for (int i = 0; i < ChoiceButtons.Count; i++) 
+            for (int i = 0; i < ChoiceButtons.Count; i++)
+            {
+                Debug.Log("Remove From CHP " + ChoiceButtons[i].name);
                 Destroy(ChoiceButtons[i].gameObject);
-
-            ChoiceButtons.Clear();
-            
+            }
+        
             RewardHandlerPanel rewardHandlePanel = FindObjectOfType<RewardHandlerPanel>();
             
             if(rewardHandlePanel == null)
                 return;
-            
+
+            Debug.Log("RemoveRewTypeFrom CHP");
             rewardHandlePanel.RemoveThisTypeOfChoiceButtons();
+
+            ChoiceButtons.Clear();
+            Debug.Log("CLEAR RACB");
         }
 
         public void RemoveThisTypeOfChoiceButtons()
@@ -134,6 +140,7 @@ namespace Naninovel.UI
                 Destroy(ChoiceButtons[i].gameObject);
 
             ChoiceButtons.Clear();
+            Debug.Log("CLEAR RTTOCB");
         }
 
         protected override void Awake ()

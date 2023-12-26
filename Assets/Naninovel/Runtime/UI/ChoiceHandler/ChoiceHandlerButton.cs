@@ -27,6 +27,8 @@ namespace Naninovel.UI
         {
             ChoiceState = choiceState;
 
+            Debug.Log("INIT " + gameObject.name);
+
             OnSummaryTextChanged?.Invoke(choiceState.Summary);
             onSummaryTextChanged?.Invoke(choiceState.Summary);
         }

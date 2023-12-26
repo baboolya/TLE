@@ -1371,3 +1371,5 @@ MonoBehaviour:
     - name: RewardButtonList
       pathPrefix: ChoiceHandlers
       guid: 3cc5c28dde576497d828dcb2ed02ac0c
+  - Id: CharacterAvatars
+    Resources: []
