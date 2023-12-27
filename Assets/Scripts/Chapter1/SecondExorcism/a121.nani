@@ -19,5 +19,5 @@ Serg: -"Костя, ты куда собрался? Постой немного.
 @bgm 123 volume:80
 Konst: -"Я спасён!"
 @save
-@goto b12
+@choice Продолжить? handler:RewardButtonList goto:b12
 @stop

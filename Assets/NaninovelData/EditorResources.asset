@@ -1250,7 +1250,7 @@ MonoBehaviour:
       guid: 2b8297bfc73cc454aadd74a66afad60f
     - name: Over
       pathPrefix: Characters/Serg
-      guid: d9de7131fd3703a4282f1ec7b2c4abb4
+      guid: ec5ce9bfd2bb5e94db8af8bfce2a8b74
   - Id: Characters/a6ee326a-494b-4689-8b3b-73ea107f5d94
     Resources:
     - name: Home
@@ -1372,4 +1372,6 @@ MonoBehaviour:
       pathPrefix: ChoiceHandlers
       guid: 3cc5c28dde576497d828dcb2ed02ac0c
   - Id: CharacterAvatars
+    Resources: []
+  - Id: Unlockables
     Resources: []

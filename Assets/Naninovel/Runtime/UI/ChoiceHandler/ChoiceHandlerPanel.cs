@@ -118,20 +118,20 @@ namespace Naninovel.UI
         {
             for (int i = 0; i < ChoiceButtons.Count; i++)
             {
-                Debug.Log("Remove From CHP " + ChoiceButtons[i].name);
                 Destroy(ChoiceButtons[i].gameObject);
             }
-        
-            RewardHandlerPanel rewardHandlePanel = FindObjectOfType<RewardHandlerPanel>();
-            
-            if(rewardHandlePanel == null)
-                return;
-
-            Debug.Log("RemoveRewTypeFrom CHP");
-            rewardHandlePanel.RemoveThisTypeOfChoiceButtons();
 
             ChoiceButtons.Clear();
-            Debug.Log("CLEAR RACB");
+
+            RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
+
+            foreach (var item in rewardChoiceHandlerPanel)
+            {
+                Debug.Log("CHPAllRemoveDel " + item.name);
+
+                if (item != null && item != this)
+                    item.RemoveAllChoiceButtons();
+            }
         }
 
         public void RemoveThisTypeOfChoiceButtons()
@@ -140,7 +140,6 @@ namespace Naninovel.UI
                 Destroy(ChoiceButtons[i].gameObject);
 
             ChoiceButtons.Clear();
-            Debug.Log("CLEAR RTTOCB");
         }
 
         protected override void Awake ()

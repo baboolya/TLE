@@ -7,7 +7,6 @@ Serg: -"Ну здравствуй, Алексей "
 Служитель замер и не может произнести ни слова
 Вы хотите обратиться к демону по имени, но забыли как его звали.
 @save
-@choice Подсказка handler:RewardButtonList goto:c21211
 @choice "Ifantem Lucius" goto:c21211
 @choice "Ifantem Luceys" goto:1miss
 @stop

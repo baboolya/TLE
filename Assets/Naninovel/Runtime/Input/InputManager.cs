@@ -48,8 +48,13 @@ namespace Naninovel
             if (Configuration.SpawnEventSystem)
             {
                 if (ObjectUtils.IsValid(Configuration.CustomEventSystem))
+                {
                     Engine.Instantiate(Configuration.CustomEventSystem).transform.SetParent(gameObject.transform, false);
-                else gameObject.AddComponent<EventSystem>();
+                }
+                else
+                { 
+                    gameObject.AddComponent<EventSystem>();
+                }
             }
 
             if (Configuration.SpawnInputModule)

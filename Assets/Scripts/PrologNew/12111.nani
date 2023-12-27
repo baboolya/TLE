@@ -5,7 +5,7 @@ Dad: -"Ты поступил очень храбро и ответственно
 Konst: -"Отлично! Я назову его...."
 
 @save
-@choice "Томас" goto:tomas
-@choice "Рыжик" goto:Rigik
-@choice "Малыш ричи" handler:RewardButtonList goto:nameCat
+@choice Томас goto:tomas
+@choice Рыжик goto:Rigik
+@choice "Малыш ричи" goto:nameCat
 @stop

@@ -11,5 +11,5 @@ Mom: -"ТЫ ПОЧЕМУ КО МНЕ НЕ ПРИШЕЛ ПОСЛЕ УРОКОВ??
 Mom: -"БОЛЬШЕ НИКОГДА ТАК НЕ ДЕЛАЙ! СЛЫШИШЬ?? НИКОГДА!"
 @hide Mom
 @save
-@goto 0C2
+@choice Продолжить? handler:RewardButtonList goto:0C2
 @stop

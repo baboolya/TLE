@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: InputConfiguration
   m_EditorClassIdentifier: 
   SpawnEventSystem: 1
-  CustomEventSystem: {fileID: 0}
-  SpawnInputModule: 1
+  CustomEventSystem: {fileID: 3351957769087054465, guid: 526348543895f8e4681fe7025905530e, type: 3}
+  SpawnInputModule: 0
   CustomInputModule: {fileID: 0}
   TouchFrequencyLimit: 0.1
   TouchDistanceLimit: 25
@@ -56,15 +56,6 @@ MonoBehaviour:
     Axes: []
     Swipes:
     - Direction: 1
-      FingerCount: 1
-      MinimumDistance: 50
-      ActivateOnMove: 0
-  - Name: ShowBacklog
-    AlwaysProcess: 0
-    Keys: 6c0000004f010000
-    Axes: []
-    Swipes:
-    - Direction: 0
       FingerCount: 1
       MinimumDistance: 50
       ActivateOnMove: 0

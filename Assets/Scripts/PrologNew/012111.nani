@@ -11,8 +11,8 @@ Vrach: -"Что планируете с ним делать?"
 
 
 @hide Vrach
-@char Dad.Winter pos:20,0
-@char Konst.KidWinter pos:80.,0
+@char Konst.KidWinter pos:80,0 look:left
+@char Dad.Winter look:left pos:30,0
 @save
 @choice "Я бы хотел забрать его к себе!" goto:12111
 @choice "Найдите ему хороших хозяев" goto:12112

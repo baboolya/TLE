@@ -18,12 +18,12 @@ namespace Naninovel.UI
             return UniTask.CompletedTask;
         }
 
-        protected override void Awake ()
+        protected override void Awake()
         {
             base.Awake();
             this.AssertRequiredObjects(trigger);
 
-            inputManager = Engine.GetService<IInputManager>();
+            inputManager = Engine.GetService<IInputManager>();         
         }
 
         protected override void OnDestroy ()

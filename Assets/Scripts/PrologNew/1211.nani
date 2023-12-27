@@ -10,8 +10,8 @@ Konst: -"Один еще жив. Побежали до телефона! Я по
 @despawn Snow
 @back Clinik
 Вы передали котенка врачам и остались ожидать в коридоре.
-@char Konst.KidWinter pos:20,0
-@char Dad.Winter pos:80,0
+@char Konst.KidWinter look:right pos:20,0
+@char Dad.Winter look:right pos:80,0
 
 
 Dad: -"Что у вас там произошло??"

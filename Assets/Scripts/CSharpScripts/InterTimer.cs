@@ -2,21 +2,24 @@ using System.Collections;
 using System;
 using UnityEngine;
 using Agava.YandexGames;
-using Agava.YandexMetrica;
-using Agava.WebUtility;
+using TMPro;
 
 public class InterTimer : MonoBehaviour
 {
     [SerializeField] private float _waitTime;
-    [SerializeField] private float _adsTimer;
+    [SerializeField] private int _adsTimer;
     [SerializeField] private GameObject _adsPannel;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
     private Action<string> _adErrorMessage;
     private bool _isFirstAd;
+    private TMP_Text _textMessage;
+    private int _currentTimer;
+
     private void Start()
     {
+        _currentTimer = _adsTimer;
         _isFirstAd = true;
         StartCoroutine(Timer());
     }
@@ -42,12 +45,10 @@ public class InterTimer : MonoBehaviour
 
         while (true)
         {
-            if(_isFirstAd == false)
-                _adsPannel.gameObject.SetActive(true);
-	    else
-		_isFirstAd = false;
-
-            yield return waitForAnySeconds;
+            if (_isFirstAd == false)
+               yield return ChangeText();
+            else
+                _isFirstAd = false;
 
             InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);           
             _adsPannel.gameObject.SetActive(false);
@@ -64,10 +65,21 @@ public class InterTimer : MonoBehaviour
     }
     
     private void OnInterstitialAdClose(bool result)
-    {
-        
+    {        
         AudioListener.pause = false;
         AudioListener.volume = 1f;
         Time.timeScale = 1f;
+    }
+    
+    private IEnumerator ChangeText()
+    {
+        _textMessage.text = $"До начала рекламы {_currentTimer} сек.";
+
+        yield return new WaitForSeconds(1f);
+
+        _currentTimer--;
+
+        if (_currentTimer == 0)
+            StopCoroutine(ChangeText());
     }
 }

@@ -17,8 +17,7 @@ namespace Naninovel.UI
         {
             _adOpened += OnAdOpened;
             _rewardAdClosed += OnRewardAdClose;
-            _getReward += OnRewarded;
-            
+                       
             base.OnEnable();
         }
 
@@ -26,8 +25,7 @@ namespace Naninovel.UI
         {
             _adOpened -= OnAdOpened;
             _rewardAdClosed -= OnRewardAdClose;
-            _getReward -= OnRewarded;
-            
+                        
             base.OnDisable();
         }
 
@@ -57,14 +55,6 @@ namespace Naninovel.UI
             AudioListener.volume = 1f;
 
             Time.timeScale = 1f;
-        }
-
-        private void OnRewarded()
-        {
-            AudioListener.pause = false;
-            AudioListener.volume = 1f;
-
-            Time.timeScale = 1f;
-        }
+        }      
     }
 }

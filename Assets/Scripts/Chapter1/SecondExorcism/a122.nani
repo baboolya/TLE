@@ -18,5 +18,5 @@ Serg: -"Я тебе оставил дырочку в стене..."
 @stopSfx  fade:3
 @bgm 123 volume:80
 @save
-@goto b12
+@choice Продолжить? handler:RewardButtonList goto:b12
 @stop
