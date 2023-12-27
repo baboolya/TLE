@@ -39,9 +39,7 @@ namespace Naninovel.UI
         [SerializeField] private ChoiceHandlerButton defaultButtonPrefab;
         [Tooltip("Whether to focus added choice buttons for keyboard and gamepad control.")]
         [SerializeField] private bool focusChoiceButtons = true;
-
-        [SerializeField] private RewardHandlerPanel _rewardHandlerPanel;
-
+        
         private IResourceLoader<GameObject> customButtonLoader;
         private IBacklogUI backlogUI;
         private bool removeAllButtonsPending;
@@ -69,9 +67,7 @@ namespace Naninovel.UI
             choiceButton.Initialize(choice);
             choiceButton.Show();
             choiceButton.OnButtonClicked += () => OnChoice?.Invoke(choice);
-
-            Debug.Log("ADD_BUTTON "+choiceButton.name);
-
+            
             if (backlogUI != null)
             {
                 choiceButton.OnButtonClicked += () => backlogUI.AddChoice(ChoiceButtons
@@ -112,6 +108,14 @@ namespace Naninovel.UI
             {
                 if (button) button.Hide();
             }
+            
+            // RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
+            //
+            // foreach (var item in rewardChoiceHandlerPanel)
+            // {
+            //     if (item != null && item != this)
+            //         item.RemoveAllThisChoiceButtonsDelayed();
+            // }
         }
 
         public virtual void RemoveAllChoiceButtons()
@@ -123,24 +127,34 @@ namespace Naninovel.UI
 
             ChoiceButtons.Clear();
 
-            RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
-
-            foreach (var item in rewardChoiceHandlerPanel)
-            {
-                Debug.Log("CHPAllRemoveDel " + item.name);
-
-                if (item != null && item != this)
-                    item.RemoveAllChoiceButtons();
-            }
+            // RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
+            //
+            // foreach (var item in rewardChoiceHandlerPanel)
+            // {
+            //     if (item != null && item != this)
+            //         item.RemoveThisTypeOfChoiceButtons();
+            // }
         }
 
-        public void RemoveThisTypeOfChoiceButtons()
-        {
-            for (int i = 0; i < ChoiceButtons.Count; i++) 
-                Destroy(ChoiceButtons[i].gameObject);
-
-            ChoiceButtons.Clear();
-        }
+        // public void RemoveThisTypeOfChoiceButtons()
+        // {
+        //     for (int i = 0; i < ChoiceButtons.Count; i++) 
+        //         Destroy(ChoiceButtons[i].gameObject);
+        //
+        //     ChoiceButtons.Clear();
+        // }
+        //
+        // public void RemoveAllThisChoiceButtonsDelayed()
+        // {
+        //     ChoiceButtons?.ForEach(HideIfValid);
+        //     
+        //     removeAllButtonsPending = true;
+        //
+        //     void HideIfValid (ChoiceHandlerButton button)
+        //     {
+        //         if (button) button.Hide();
+        //     }
+        // }
 
         protected override void Awake ()
         {

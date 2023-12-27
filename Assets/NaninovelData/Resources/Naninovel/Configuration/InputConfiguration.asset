@@ -18,7 +18,8 @@ MonoBehaviour:
   CustomInputModule: {fileID: 0}
   TouchFrequencyLimit: 0.1
   TouchDistanceLimit: 25
-  ProcessLegacyBindings: 1
+  InputActions: {fileID: -944628639613478452, guid: 88640713ebb1f4940afc27466ecf7129, type: 3}
+  ProcessLegacyBindings: 0
   Bindings:
   - Name: Submit
     AlwaysProcess: 0

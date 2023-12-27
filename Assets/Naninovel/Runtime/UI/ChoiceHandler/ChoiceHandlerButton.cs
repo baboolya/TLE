@@ -26,9 +26,7 @@ namespace Naninovel.UI
         public virtual void Initialize (ChoiceState choiceState)
         {
             ChoiceState = choiceState;
-
-            Debug.Log("INIT " + gameObject.name);
-
+            
             OnSummaryTextChanged?.Invoke(choiceState.Summary);
             onSummaryTextChanged?.Invoke(choiceState.Summary);
         }

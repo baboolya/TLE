@@ -31,14 +31,18 @@ namespace Naninovel.UI
 
         protected override void InvokeOnButtonClicked()
         {
-            VideoAd.Show(()=>
-		{
-			_adOpened?.Invoke();
-			base.InvokeOnButtonClicked();
-		},
-                _getReward,
-                _rewardAdClosed,
-                _adErrorMessage);
+  //           VideoAd.Show(()=>
+		// {
+		// 	_adOpened?.Invoke();
+		// 	base.InvokeOnButtonClicked();
+		// },
+  //               _getReward,
+  //               _rewardAdClosed,
+  //               _adErrorMessage);
+  
+            _adOpened?.Invoke();
+            _rewardAdClosed?.Invoke();
+            base.InvokeOnButtonClicked();
         }
 
         private void OnAdOpened()
