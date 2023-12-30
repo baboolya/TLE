@@ -96,9 +96,8 @@ MonoBehaviour:
   modalUI: 0
   fontChangeConfiguration: []
   buttonsContainer: {fileID: 224198401566905306}
-  defaultButtonPrefab: {fileID: -7092965654766615683, guid: b69d3e17808654288bf1730eb5e56f56, type: 3}
+  defaultButtonPrefab: {fileID: 3740012713564053993, guid: b69d3e17808654288bf1730eb5e56f56, type: 3}
   focusChoiceButtons: 1
-  _rewardHandlerPanel: {fileID: -3193540323559747806}
 --- !u!225 &225470808532994266
 CanvasGroup:
   m_ObjectHideFlags: 0

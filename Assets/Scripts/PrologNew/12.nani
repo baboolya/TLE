@@ -25,5 +25,5 @@ Friend: -"Ах ты, сволочь!"
 @hide Billy
 @save
 @choice "Беги за ним! Я пока осмотрю котят" goto:2q
-@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:2q button:RewardButtonList
+@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:2q button:Buttons/RewardButton
 @stop

@@ -1,5 +1,5 @@
 
 @hideAll
 @save
-@choice "Конец" handler:RewardButtonList goto:RealEnd
+@goto RealEnd
 @stop

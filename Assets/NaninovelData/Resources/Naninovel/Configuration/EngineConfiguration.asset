@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EngineConfiguration
   m_EditorClassIdentifier: 
   GeneratedDataPath: NaninovelData
-  OverrideObjectsLayer: 0
-  ObjectsLayer: 0
+  OverrideObjectsLayer: 1
+  ObjectsLayer: 5
   AsyncExceptionLogType: 0
   TypeAssemblies:
   - Assembly-CSharp
@@ -31,4 +31,4 @@ MonoBehaviour:
   AutoGenerateMetadata: 1
   GenerateLabelMetadata: 1
   EnableDevelopmentConsole: 1
-  ToggleConsoleKey: 96
+  ToggleConsoleKey: 271

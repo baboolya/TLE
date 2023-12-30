@@ -19,7 +19,7 @@ MonoBehaviour:
   TouchFrequencyLimit: 0.1
   TouchDistanceLimit: 25
   InputActions: {fileID: -944628639613478452, guid: 88640713ebb1f4940afc27466ecf7129, type: 3}
-  ProcessLegacyBindings: 0
+  ProcessLegacyBindings: 1
   Bindings:
   - Name: Submit
     AlwaysProcess: 0
@@ -38,28 +38,18 @@ MonoBehaviour:
     Swipes: []
   - Name: Continue
     AlwaysProcess: 0
-    Keys: 43010000
+    Keys: 13010000
     Axes: []
-    Swipes: []
+    Swipes:
+    - Direction: 2
+      FingerCount: 1
+      MinimumDistance: 20
+      ActivateOnMove: 1
   - Name: ToggleSkip
     AlwaysProcess: 0
     Keys: 0900000053010000
     Axes: []
     Swipes: []
-  - Name: AutoPlay
-    AlwaysProcess: 0
-    Keys: 610000004c010000
-    Axes: []
-    Swipes: []
-  - Name: ToggleUI
-    AlwaysProcess: 0
-    Keys: 200000004d010000
-    Axes: []
-    Swipes:
-    - Direction: 1
-      FingerCount: 1
-      MinimumDistance: 50
-      ActivateOnMove: 0
   - Name: CameraLookX
     AlwaysProcess: 0
     Keys: 

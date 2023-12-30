@@ -7,5 +7,5 @@ Dad: -"Да, это тоже верно. Люди ходят туда за по�
 Konst: -"Понял..."
 @hide Dad
 @save
-@choice Продолжить? handler:RewardButtonList goto:4
+@goto 4
 @stop

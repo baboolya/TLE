@@ -36,5 +36,5 @@ Friend: -"Ах ты, сволочь!"
 @hide Billy
 @save
 @choice "Беги за ним! Я пока осмотрю котят" goto:1q
-@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:1q handler:RewardButtonList
+@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:1q button:Buttons/RewardButton
 @stop

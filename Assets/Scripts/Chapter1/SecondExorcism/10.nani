@@ -17,5 +17,5 @@ Mom: -"Сынок, ты всю ночь книгу Прародителя что
 Konst: -"Вот это ужасы, как мне только такое в голову взбрело"
 @save
 @stopSfx  fade:3
-@choice Продолжить? handler:RewardButtonList goto:a11
+@goto a11
 @stop

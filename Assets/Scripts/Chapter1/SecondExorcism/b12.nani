@@ -3,6 +3,6 @@
 @bgm 123
 @back Obr2
 @i
-@choice Продолжить handler:RewardButtonList goto:RewObr2
 
+@goto RewObr2
 @stop

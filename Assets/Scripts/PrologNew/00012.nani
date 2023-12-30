@@ -9,5 +9,5 @@ Friend: -"Давай в ближайшее время увидимся да по
 Konst: -"Конечно, приду, как только смогу"
 @hide Friend
 @save
-@choice Продолжить? handler:RewardButtonList goto:30
+@goto 30
 @stop

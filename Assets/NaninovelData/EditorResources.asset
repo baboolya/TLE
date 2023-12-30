@@ -1195,6 +1195,15 @@ MonoBehaviour:
     - name: ClosedHole
       pathPrefix: Backgrounds/MainBackground
       guid: f8408ee0ac2671d4cb6862270f6f2d5d
+    - name: sb1999
+      pathPrefix: Backgrounds/MainBackground
+      guid: bfaeeb037e5fdd940a7359e6425ee5b1
+    - name: Glazok
+      pathPrefix: Backgrounds/MainBackground
+      guid: e6e4b09bacd65e947b5760ac5a2e6091
+    - name: yprav
+      pathPrefix: Backgrounds/MainBackground
+      guid: 154822169f31ed64ca391844cedf83ab
   - Id: Characters/431817bc-4dcb-46a1-a082-2c157e6dca76
     Resources:
     - name: Crown
@@ -1327,19 +1336,25 @@ MonoBehaviour:
       guid: 53ef0a0c212abf14f850def06560a24a
     - name: brush
       pathPrefix: Audio
-      guid: 71fd7f46943c84047b635c2846ae31b4
+      guid: 17eb6079f1c45f643bc69c6f9d356af9
     - name: Sbrush
       pathPrefix: Audio
-      guid: de765fd939f47a6498c7c90669f32549
+      guid: fe5b03685a4b8ec45bf3b14efd23c227
     - name: Scream
       pathPrefix: Audio
       guid: f37630c96cabb6a4dafbb1500fd252fd
     - name: Shag
       pathPrefix: Audio
-      guid: 359eeb66fa3bae945a5c3f68cbc63c80
+      guid: db30ed13598c17b408976bd60974efba
     - name: epic
       pathPrefix: Audio
       guid: 9139ea53cfc783045808b3f4b4ce395d
+    - name: ka4
+      pathPrefix: Audio
+      guid: 40a052742195e4d4191e8167fa8a76ba
+    - name: udal
+      pathPrefix: Audio
+      guid: ccf544b14d397474a8ed77cf06de4757
   - Id: Movies
     Resources:
     - name: Scream1
@@ -1365,13 +1380,18 @@ MonoBehaviour:
     Resources:
     - name: 1
       pathPrefix: Characters/Svash
-      guid: f279853efb9f53043a13636119b36d67
+      guid: 6802811bac936124d926d46788f8a765
   - Id: ChoiceHandlers/db68bce7-c7b8-42f0-9933-e5d85e0a4f04
     Resources:
     - name: RewardButtonList
       pathPrefix: ChoiceHandlers
-      guid: 3cc5c28dde576497d828dcb2ed02ac0c
+      guid: 1f6aa29000e839c409e6a9c0704adc96
   - Id: CharacterAvatars
     Resources: []
   - Id: Unlockables
     Resources: []
+  - Id: ChoiceHandlers/9b8c2493-79d8-4522-b74e-15a46441e949
+    Resources:
+    - name: rewBL
+      pathPrefix: ChoiceHandlers
+      guid: 81fc56ff5f050da41b2eb9f15b868508

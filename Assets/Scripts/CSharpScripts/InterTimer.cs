@@ -9,16 +9,18 @@ public class InterTimer : MonoBehaviour
     [SerializeField] private float _waitTime;
     [SerializeField] private int _adsTimer;
     [SerializeField] private GameObject _adsPannel;
+    [SerializeField] private TMP_Text _textMessage;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
     private Action<string> _adErrorMessage;
     private bool _isFirstAd;
-    private TMP_Text _textMessage;
     private int _currentTimer;
+    private Coroutine _changer;
 
     private void Start()
     {
+        _changer = StartCoroutine(ChangeText());
         _currentTimer = _adsTimer;
         _isFirstAd = true;
         StartCoroutine(Timer());
@@ -45,10 +47,20 @@ public class InterTimer : MonoBehaviour
 
         while (true)
         {
-            if (_isFirstAd == false)
-               yield return ChangeText();
-            else
-                _isFirstAd = false;
+
+            _adsPannel.gameObject.SetActive(true);
+            StartCoroutine(ChangeText());
+
+            yield return ChangeText();
+
+            ///if (_isFirstAd == false)
+	        //{
+	      	    
+	        //}
+            //else
+	        //{
+            //   _isFirstAd = false;
+	        //}
 
             InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);           
             _adsPannel.gameObject.SetActive(false);
@@ -73,13 +85,15 @@ public class InterTimer : MonoBehaviour
     
     private IEnumerator ChangeText()
     {
-        _textMessage.text = $"До начала рекламы {_currentTimer} сек.";
+        Debug.Log("StartChange");
+        _textMessage.text = $"До начала рекламы {_currentTimer} сек...";
 
         yield return new WaitForSeconds(1f);
 
         _currentTimer--;
 
-        if (_currentTimer == 0)
-            StopCoroutine(ChangeText());
+        if (_currentTimer == 0 
+            && _changer != null)
+            StopCoroutine(_changer);
     }
 }

@@ -1,4 +1,6 @@
 
+@back yprav
+@i
 @sfx shum volume:0.7 loop:true
 @sfx jertv volume:0.3
 @back rep
@@ -62,5 +64,5 @@ Konst: -"Что же тут случилось??"
 Friend: -"Поспешим! Вдруг кто-то ранен!"
 @save
 @choice "Спустимся сначала в подвал?" goto:11
-@choice "Побежали по следам пока их совсем не замело" goto:12 handler:RewardButtonList
+@choice "Побежали по следам пока их совсем не замело" handler:ButtonList goto:12
 @stop

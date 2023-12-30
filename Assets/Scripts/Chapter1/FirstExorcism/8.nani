@@ -4,5 +4,5 @@
 
 
 @i
-@choice Продолжить? handler:RewardButtonList goto:RewObr1
+@goto RewObr1
 @stop

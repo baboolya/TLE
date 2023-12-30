@@ -7,5 +7,5 @@
 Serg: "Открывай дверь! Опять замки сменила!?" 
 @save
 @choice "Встать и выйти в коридор" goto:51
-@choice "Остаться в кровати" goto:52
+@choice "Остаться в кровати" goto:52 button:Buttons/RewardButton
 @stop

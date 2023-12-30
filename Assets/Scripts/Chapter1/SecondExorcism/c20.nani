@@ -1,8 +1,7 @@
 @hideAll
 @bgm 123
-@sfx epic volume:0.7 loop:true
 @back Obr3
 
 @i
-@choice Продолжить handler:RewardButtonList goto:RewObr3
+@goto RewObr3
 @stop

@@ -8,5 +8,5 @@
 @back DayKonstRoom
 @save
 @choice "Подняться и спрятаться в шкаф" goto:a121
-@choice "Принять смерть" goto:a122
+@choice "Принять смерть" goto:a122 button:Buttons/RewardButton
 @stop

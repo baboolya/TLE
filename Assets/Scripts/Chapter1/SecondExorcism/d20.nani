@@ -1,6 +1,5 @@
 @hideAll
 @bgm 123
-@sfx epic volume:0.7 loop:true
 @back Skor
 Пробегая детскую площадку, в своём дворе вы замечаете машину медицинской помощи, подбежав ближе, вы видите Светлану Владимировну, говорящую с врачами 
 @char Konst.KidWinter
@@ -14,6 +13,6 @@ Sveta: - "Давай."
 Вы забегаете в квартиру и не раздеваясь, направляетесь в комнату 
 @hideAll
 @back Obr3
-@choice Продолжить handler:RewardButtonList goto:RewObr3Op
 
+@goto RewObr3Op
 @stop

@@ -15,5 +15,5 @@ Mom: -"Тогда Святилище тут и правда вряд ли смо
 
 @hide Sveta
 @save
-@choice Продолжить? handler:RewardButtonList goto:5
+@goto 5
 @stop

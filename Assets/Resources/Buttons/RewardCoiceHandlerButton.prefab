@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 222625938204193992}
   - component: {fileID: 114928903171779670}
   - component: {fileID: 114304314121696590}
-  - component: {fileID: -7092965654766615683}
   - component: {fileID: 8073050214690735864}
+  - component: {fileID: 3740012713564053993}
   m_Layer: 5
   m_Name: RewardCoiceHandlerButton
   m_TagString: Untagged
@@ -123,39 +123,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114928903171779670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &-7092965654766615683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035633866503374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7903c7d51b00a489187fc9ba6e58b3ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disableInteraction: 0
-  visibleOnAwake: 1
-  controlOpacity: 1
-  fadeTime: 0.3
-  ignoreTimeScale: 0
-  focusObject: {fileID: 0}
-  focusMode: 0
-  onShow:
-    m_PersistentCalls:
-      m_Calls: []
-  onHide:
-    m_PersistentCalls:
-      m_Calls: []
-  onSummaryTextChanged:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114634355165690268}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
-        m_Mode: 0
+      - m_Target: {fileID: 6860429698185691110, guid: 94e409e47447bd7409d007300279db89, type: 3}
+        m_TargetAssemblyTypeName: RewScript, Assembly-CSharp
+        m_MethodName: PlayAd
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -190,6 +162,34 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &3740012713564053993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035633866503374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f53b2ea0438dc4da9f9da472836dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableInteraction: 0
+  visibleOnAwake: 1
+  controlOpacity: 1
+  fadeTime: 0.3
+  ignoreTimeScale: 1
+  focusObject: {fileID: 0}
+  focusMode: 0
+  onShow:
+    m_PersistentCalls:
+      m_Calls: []
+  onHide:
+    m_PersistentCalls:
+      m_Calls: []
+  onSummaryTextChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1651015138009070
 GameObject:
   m_ObjectHideFlags: 0

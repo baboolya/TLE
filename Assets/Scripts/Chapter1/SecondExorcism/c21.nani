@@ -3,4 +3,5 @@ Konst: -"Что он сказал?"
 @save
 @choice "Изгоняю тебя, дух нечистоты, иная сила всякая" goto:1miss
 @choice "Изгоняем тебя, дух всякой нечистоты, всякая иная сила " goto:c212
+@choice Подсказка button:Buttons/RewardButton goto:с212
 @stop

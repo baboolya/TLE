@@ -10,5 +10,5 @@
 Ключи лежат за вашим соседом на столике.
 @save
 @choice Убежать! goto:a12
-@choice Стоять goto:a11111
+@choice Стоять goto:a11111 button:Buttons/RewardButton
 @stop

@@ -12,7 +12,7 @@
             "{\"QualityLevel\":5}",
             "{\"SelectedLocale\":\"\"}",
             "{\"SkipMode\":0}",
-            "{\"BaseRevealSpeed\":0.35548391938209536,\"BaseAutoDelay\":0.5}",
+            "{\"BaseRevealSpeed\":1.0,\"BaseAutoDelay\":0.5}",
             "{\"MasterVolume\":1.0,\"BgmVolume\":1.0,\"SfxVolume\":1.0,\"VoiceVolume\":1.0,\"VoiceLocale\":\"\",\"AuthorVolume\":[]}",
             "{\"FontName\":\"\",\"FontSize\":-1}"
         ]

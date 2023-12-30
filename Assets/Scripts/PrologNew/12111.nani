@@ -7,5 +7,5 @@ Konst: -"Отлично! Я назову его...."
 @save
 @choice Томас goto:tomas
 @choice Рыжик goto:Rigik
-@choice "Малыш ричи" goto:nameCat
+@choice "Малыш ричи" goto:nameCat button:Buttons/RewardButton
 @stop
