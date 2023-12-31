@@ -8,8 +8,9 @@ public class InterTimer : MonoBehaviour
 {
     [SerializeField] private float _waitTime;
     [SerializeField] private int _adsTimer;
-    [SerializeField] private GameObject _adsPannel;
-    [SerializeField] private TMP_Text _textMessage;
+    [SerializeField] private GameObject _adsPannel; 
+
+    private TMP_Text _textMessage;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
@@ -20,6 +21,8 @@ public class InterTimer : MonoBehaviour
 
     private void Start()
     {
+        _textMessage = _adsPannel.GetComponentInChildren<TMP_Text>();
+
         _changer = StartCoroutine(ChangeText());
         _currentTimer = _adsTimer;
         _isFirstAd = true;
@@ -43,27 +46,24 @@ public class InterTimer : MonoBehaviour
         float adsTime = _waitTime - _adsTimer;
         
         var waitForAnyMinutes = new WaitForSeconds(adsTime);
-        var waitForAnySeconds = new WaitForSeconds(_adsTimer);
 
         while (true)
         {
+            if (_isFirstAd == false)
+            {
+                _adsPannel.SetActive(true);
 
-            _adsPannel.gameObject.SetActive(true);
-            StartCoroutine(ChangeText());
+                yield return ChangeText();
+            }
+            else
+            {
+               _isFirstAd = false;
+            }
 
-            yield return ChangeText();
+            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage); 
+            Debug.Log("InterstAD");
 
-            ///if (_isFirstAd == false)
-	        //{
-	      	    
-	        //}
-            //else
-	        //{
-            //   _isFirstAd = false;
-	        //}
-
-            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage);           
-            _adsPannel.gameObject.SetActive(false);
+            _adsPannel.SetActive(false);
 
             yield return waitForAnyMinutes;
         }
@@ -85,15 +85,29 @@ public class InterTimer : MonoBehaviour
     
     private IEnumerator ChangeText()
     {
-        Debug.Log("StartChange");
-        _textMessage.text = $"До начала рекламы {_currentTimer} сек...";
+        bool isOpen = true;
 
-        yield return new WaitForSeconds(1f);
+        while(isOpen)
+        {
+            Debug.Log("StartChange");
 
-        _currentTimer--;
+            _textMessage.text = $"До начала рекламы {_currentTimer} сек...";
 
-        if (_currentTimer == 0 
-            && _changer != null)
+            yield return new WaitForSeconds(1f);
+
+            _currentTimer--;
+
+            if (_currentTimer == 0)
+            {
+                _currentTimer = _adsTimer;
+                isOpen = false;
+            }
+        }
+
+        if (_changer != null)
+        {
+            isOpen = true;
             StopCoroutine(_changer);
+        }
     }
 }

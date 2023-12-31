@@ -1203,7 +1203,7 @@ MonoBehaviour:
       guid: e6e4b09bacd65e947b5760ac5a2e6091
     - name: yprav
       pathPrefix: Backgrounds/MainBackground
-      guid: 154822169f31ed64ca391844cedf83ab
+      guid: 8fa2f94914646824ab4dd79cd87b585e
   - Id: Characters/431817bc-4dcb-46a1-a082-2c157e6dca76
     Resources:
     - name: Crown

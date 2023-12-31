@@ -45,18 +45,6 @@ MonoBehaviour:
       FingerCount: 1
       MinimumDistance: 0.2
       ActivateOnMove: 1
-    - Direction: 3
-      FingerCount: 1
-      MinimumDistance: 0.2
-      ActivateOnMove: 1
-    - Direction: 0
-      FingerCount: 1
-      MinimumDistance: 0.2
-      ActivateOnMove: 1
-    - Direction: 1
-      FingerCount: 1
-      MinimumDistance: 0.2
-      ActivateOnMove: 1
   - Name: ToggleSkip
     AlwaysProcess: 0
     Keys: 0900000053010000
