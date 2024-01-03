@@ -1,6 +1,7 @@
 
 Вы открываете входную дверь и оказываетесь рядом с пришедшими... 
 @back Padik
+@bgm  volume:1
 @char Konst.KidListen pos:20,0
 @char Sveta.Winter pos:80,0
 @char Svash.1 pos:60,0

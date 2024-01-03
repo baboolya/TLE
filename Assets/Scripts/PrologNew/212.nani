@@ -1,5 +1,6 @@
 
 Вы подошли к столу и на вас уставились взрослые. Они все ждут, что вы что-то скажите.
+@bgm  volume:1
 Konst: -"Отметка пройдена! Прием"
 @hide Gopnicks
 @char Gopnicks.OtherBlue look:left pos:20,0

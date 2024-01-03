@@ -773,12 +773,15 @@ MonoBehaviour:
     - name: d021
       pathPrefix: Scripts
       guid: 552613b789d32c0458302abdec30970a
-    - name: Rigik
-      pathPrefix: Scripts
-      guid: 915c7ec7872af1549bae2e8be2b730bc
     - name: RewObr1
       pathPrefix: Scripts
       guid: 2a10bf8168e5fdc46ae585d029706b15
+    - name: LeonName
+      pathPrefix: Scripts
+      guid: d0fbd7fc486500a499e1988c0b7076ff
+    - name: Freddy
+      pathPrefix: Scripts
+      guid: b9649ccf119405c4daa2ddd7d0cfb1ee
   - Id: Backgrounds/cef5c86c-3ba7-4902-babe-c62c5ee9dea8
     Resources:
     - name: AfterSchool
@@ -1140,7 +1143,7 @@ MonoBehaviour:
       guid: c7e5ae087011c6043bf96873b92ec43f
     - name: Menu
       pathPrefix: Backgrounds/MainBackground
-      guid: ad09afdfd14589d43a8ca6f3a5f1bdf8
+      guid: 9425caff85153d94492e0e5ded034bb9
     - name: Obr1
       pathPrefix: Backgrounds/MainBackground
       guid: 8194cc4214aface4caf2bcb605eba2f5
@@ -1348,13 +1351,16 @@ MonoBehaviour:
       guid: db30ed13598c17b408976bd60974efba
     - name: epic
       pathPrefix: Audio
-      guid: 9139ea53cfc783045808b3f4b4ce395d
+      guid: a81f257c4ceffdd44a2f938bbb9bd6fa
     - name: ka4
       pathPrefix: Audio
       guid: 40a052742195e4d4191e8167fa8a76ba
     - name: udal
       pathPrefix: Audio
       guid: ccf544b14d397474a8ed77cf06de4757
+    - name: intro
+      pathPrefix: Audio
+      guid: 4ca7943f331285b4ab4ebd895cfca951
   - Id: Movies
     Resources:
     - name: Scream1

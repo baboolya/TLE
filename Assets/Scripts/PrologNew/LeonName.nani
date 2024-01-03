@@ -1,0 +1,4 @@
+@save
+@set G_name="Леон"
+@goto 0121111
+@stop

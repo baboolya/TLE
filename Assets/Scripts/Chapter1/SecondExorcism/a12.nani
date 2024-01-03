@@ -5,8 +5,10 @@
 @i
 Сосед догоняет вас и с силой через весь коридор забрасывает в комнату
 
+@bgm  volume:1
 @back DayKonstRoom
 @save
+@bgm  volume:0
 @choice "Подняться и спрятаться в шкаф" goto:a121
-@choice "Принять смерть" goto:a122 button:Buttons/RewardButton
+@choice "Принять смерть" button:Buttons/RewardButton goto:a122
 @stop

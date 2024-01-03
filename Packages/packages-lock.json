@@ -7,13 +7,6 @@
       "dependencies": {},
       "hash": "32d39130ea78dce0c3ea0ed83ec5f022efefde42"
     },
-    "com.agava.yandexgames": {
-      "version": "https://github.com/forcepusher/com.agava.yandexgames.git#16.0.0",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "faf20595c0f18f4a471e6b27fbd5fbf5fd05d7a2"
-    },
     "com.agava.yandexmetrica": {
       "version": "https://github.com/forcepusher/com.agava.yandexmetrica.git#1.2.0",
       "depth": 0,
@@ -66,6 +59,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.recorder": {
+      "version": "3.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },

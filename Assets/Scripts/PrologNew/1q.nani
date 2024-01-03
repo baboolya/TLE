@@ -1,5 +1,6 @@
 @set G_cat=0
 Friend:  -"Я побегу за ним, этот гад должен заплатить за это"
+@bgm  volume:1
 @hide Friend
 @char Konst.KidWinter look:right pos:20,0
 @back DeadKitty

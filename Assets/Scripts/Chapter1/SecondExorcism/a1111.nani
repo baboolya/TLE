@@ -9,6 +9,7 @@
 Вы оцепенели и стоите напротив него, не веря своим глазам, но и он не шевелится больше. "Он ожидает моих действий " - Подумали вы.
 Ключи лежат за вашим соседом на столике.
 @save
+@bgm  volume:0
 @choice Убежать! goto:a12
-@choice Стоять goto:a11111 button:Buttons/RewardButton
+@choice Стоять button:Buttons/RewardButton goto:a11111
 @stop

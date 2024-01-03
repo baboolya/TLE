@@ -1,11 +1,12 @@
 
 @hideAll
 @stopSfx 
-@bgm 123
 @back vt1999
 @i
 @back ASchool
 Вас отпустили с уроков раньше, так что у вас ещё много времени перед приходом служителя
+@bgm 123
+@bgm  volume:1
 Вы идете со школы, вместе со своим другом Никитой
 @char Friend.KidWinter
 @char Konst.KidWinter

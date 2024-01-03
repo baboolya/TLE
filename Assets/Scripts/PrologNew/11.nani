@@ -35,6 +35,7 @@ Friend: -"Ах ты, сволочь!"
 От недоумения Арсений резко вскакивает и начинает убегать в темноту...
 @hide Billy
 @save
+@bgm  volume:0
 @choice "Беги за ним! Я пока осмотрю котят" goto:1q
-@choice "Пусть бежит! Вдруг понадобиться твоя помощь" goto:1q button:Buttons/RewardButton
+@choice "Пусть бежит! Вдруг понадобиться твоя помощь" button:Buttons/RewardButton goto:1q
 @stop

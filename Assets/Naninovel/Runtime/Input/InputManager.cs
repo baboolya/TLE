@@ -173,5 +173,10 @@ namespace Naninovel
                         kv.Value.SampleInput();
             }
         }
+
+        private void Update()
+        {
+
+        }
     }
 }

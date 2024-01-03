@@ -6,6 +6,7 @@
 @sfx Hearth
 Но к вашему удивлению вы увидели лишь глаз Сергея. 
 Serg: -"Служитель твой ещё не пришёл, давай поговорим? "
+@bgm  volume:0
 @choice Молчать goto:b191
-@choice "О чем?" goto:b192 button:Buttons/RewardButton
+@choice "О чем?" button:Buttons/RewardButton goto:b192
 @stop

@@ -92,7 +92,8 @@ MonoBehaviour:
   hideInThumbnail: 0
   saveVisibilityState: 1
   blockInputWhenVisible: 0
-  allowedSamplers: []
+  allowedSamplers:
+  - Pause
   modalUI: 0
   fontChangeConfiguration: []
   buttonsContainer: {fileID: 224198401566905306}

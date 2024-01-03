@@ -1,5 +1,4 @@
 @save
-@set "G_name=\"Малыш Ричи\""
-
+@set G_name="Шайлушай"
 @goto 0121111
 @stop

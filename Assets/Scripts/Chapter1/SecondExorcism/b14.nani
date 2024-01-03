@@ -2,6 +2,7 @@
 Mom: -"Костя! Что тут случилось? "
 Mom: -"Ты не ранен? Расскажи, что произошло"
 @save
+@bgm  volume:0
 @choice "Извиниться и рассказать" goto:b141
-@choice "Мам, это случилось во время изгнания демона из дяди Серёжи" goto:b142 button:Buttons/RewardButton
+@choice "Мам, это случилось во время изгнания демона из дяди Серёжи" button:Buttons/RewardButton goto:b142
 @stop

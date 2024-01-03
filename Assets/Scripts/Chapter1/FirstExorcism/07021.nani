@@ -2,5 +2,6 @@
 
 @save
 @choice Покушать goto:0070202
-@choice "Что за окном?" goto:070203 button:Buttons/RewardButton
+@bgm  volume:0
+@choice "Что за окном?" button:Buttons/RewardButton goto:070203
 @stop

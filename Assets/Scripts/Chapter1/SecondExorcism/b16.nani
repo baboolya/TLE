@@ -3,7 +3,7 @@
 @i
 @back ASchool
 В школе вы встречаете Никиту
-@char Konst.KidWinter look:left pos:90,0
+@char Konst.KidWinter look:left pos:75,0
 @char Friend.KidWinter look:right pos:20,0
 Konst: -"Никита, у меня дома происходит какой-то ужас, там изгоняют демона из Сергея, но он ужасно сильный, священник не справляется. "
 Friend: -"Нужно ему помочь! "

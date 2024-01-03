@@ -1,6 +1,7 @@
 
 @save
-@choice "Где же {G_name}?" goto:7020 button:Buttons/RewardButton
+@bgm 0
+@choice "Где же {G_name}?" button:Buttons/RewardButton goto:7020
 @choice "Пойду перекушу на кухню" goto:070202
 @choice "Что там на улице?" goto:070203
 @stop

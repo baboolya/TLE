@@ -1,7 +1,5 @@
 @back HoleSE
-@bgm ka4 fade:3
-@stopBgm 123
-@sfx Hearth loop:true volume:0.7
+@bgm epic intro:intro
 Вы не чувствуете доброй ауры, только ужасную от демона. 
 Konst: -"Он слаб? "
 Konst: -"Он же был так силён... "

@@ -6,6 +6,8 @@ Konst: -"Отлично! Я назову его...."
 
 @save
 @choice Томас goto:tomas
-@choice Рыжик goto:Rigik
-@choice "Малыш ричи" goto:nameCat button:Buttons/RewardButton
+@bgm  volume:0
+@choice Шайлушай button:Buttons/RewardButton goto:nameCat
+@choice Леон button:Buttons/RewardButton goto:LeonName
+@choice "Мишка Фредди" button:Buttons/RewardButton goto:Freddy
 @stop
