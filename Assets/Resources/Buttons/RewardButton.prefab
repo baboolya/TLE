@@ -164,10 +164,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
-        m_TargetAssemblyTypeName: YG.YandexGame, Assembly-CSharp
-        m_MethodName: _RewardedShow
-        m_Mode: 3
+      - m_Target: {fileID: 6860429698185691110, guid: 94e409e47447bd7409d007300279db89, type: 3}
+        m_TargetAssemblyTypeName: RewScript, Assembly-CSharp
+        m_MethodName: PlayAd
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
