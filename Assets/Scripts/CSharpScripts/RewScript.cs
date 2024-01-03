@@ -6,7 +6,7 @@ using Agava.YandexGames;
 using Naninovel;
 
 public class RewScript : MonoBehaviour
-{
+{ 
     private Action _adOpened;
     private Action _rewardAdClosed;
     private Action _getReward;
@@ -28,33 +28,33 @@ public class RewScript : MonoBehaviour
 
     public void PlayAd()
     {
-        VideoAd.Show(()=>
-        {
-            _adOpened?.Invoke();
-        },
-            _getReward,
-            _rewardAdClosed,
-            _adErrorMessage);
+        Debug.Log("ADStart");
 
-        // _adOpened?.Invoke();
-        // _rewardAdClosed?.Invoke();
+        VideoAd.Show(_adOpened, _getReward, _rewardAdClosed, _adErrorMessage);
+
+        ///_adOpened?.Invoke();
+        ///_rewardAdClosed?.Invoke();
     }
 
     private void OnAdOpened()
     {
-        _inputManager.ProcessInput = false;
+        Debug.Log("OPenREward");
         AudioListener.pause = true;
         AudioListener.volume = 0f;
-
         Time.timeScale = 0f;
+
+        _inputManager.ProcessInput = false;
+        Debug.Log("Paused");
     }
 
     private void OnRewardAdClose()
     {
-        _inputManager.ProcessInput = true;
+        Debug.Log("CloseREward");
         AudioListener.pause = false;
         AudioListener.volume = 1f;
+        _inputManager.ProcessInput = true;
 
         Time.timeScale = 1f;
+        Debug.Log("UnPaused");
     }
 }

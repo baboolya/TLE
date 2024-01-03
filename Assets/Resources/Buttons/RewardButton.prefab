@@ -383,6 +383,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224266519565909046}
     m_Modifications:
+    - target: {fileID: 6860429698185691110, guid: 94e409e47447bd7409d007300279db89, type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860429698185691110, guid: 94e409e47447bd7409d007300279db89, type: 3}
+      propertyPath: _blockPanel
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6860429698185691111, guid: 94e409e47447bd7409d007300279db89, type: 3}
       propertyPath: m_RootOrder
       value: 1
