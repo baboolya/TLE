@@ -6,18 +6,21 @@ using Agava.YandexGames;
 using Naninovel;
 
 public class RewScript : MonoBehaviour
-{ 
+{
+    private const string AdKEey = "Ad";
+    
     private Action _adOpened;
     private Action _rewardAdClosed;
     private Action _getReward;
     private Action<string> _adErrorMessage;
     private IInputManager _inputManager;
-
+    
     protected void OnEnable()
     {
         _inputManager = Engine.GetService<IInputManager>();
         _adOpened += OnAdOpened;
         _rewardAdClosed += OnRewardAdClose;
+        PlayerPrefs.SetInt(AdKEey, 0);
     }
 
     protected void OnDisable()
@@ -28,9 +31,9 @@ public class RewScript : MonoBehaviour
 
     public void PlayAd()
     {
-        Debug.Log("ADStart");
+        Debug.Log("AD");
 
-        VideoAd.Show(_adOpened, _getReward, _rewardAdClosed, _adErrorMessage);
+        VideoAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnRewardAdClose);
 
         ///_adOpened?.Invoke();
         ///_rewardAdClosed?.Invoke();
@@ -38,23 +41,26 @@ public class RewScript : MonoBehaviour
 
     private void OnAdOpened()
     {
-        Debug.Log("OPenREward");
+        PlayerPrefs.SetInt(AdKEey, 1);
+        Debug.Log("Open");
         AudioListener.pause = true;
         AudioListener.volume = 0f;
         Time.timeScale = 0f;
 
         _inputManager.ProcessInput = false;
         Debug.Log("Paused");
+
     }
 
     private void OnRewardAdClose()
     {
-        Debug.Log("CloseREward");
+        Debug.Log("Close");
         AudioListener.pause = false;
         AudioListener.volume = 1f;
         _inputManager.ProcessInput = true;
 
         Time.timeScale = 1f;
         Debug.Log("UnPaused");
+        PlayerPrefs.SetInt(AdKEey, 0);
     }
 }

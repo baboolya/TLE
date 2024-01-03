@@ -3,6 +3,8 @@ using Naninovel;
 
 public class UIControl : MonoBehaviour
 {
+    private const string AdKEey = "Ad";
+    
     [SerializeField] private CanvasGroup _blockPanel;
     [SerializeField] private float _maxPermission;
     [SerializeField] private float _minPermission;
@@ -17,6 +19,12 @@ public class UIControl : MonoBehaviour
         if (_inputManager == null)
         {
             _inputManager = Engine.GetService<IInputManager>();
+            return;
+        }
+
+        if (PlayerPrefs.GetInt(AdKEey) == 1)
+        {
+            Debug.Log("AdKey == 1");
             return;
         }
         

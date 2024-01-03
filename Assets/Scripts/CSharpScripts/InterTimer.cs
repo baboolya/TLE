@@ -6,6 +6,8 @@ using TMPro;
 
 public class InterTimer : MonoBehaviour
 {
+    private const string AdKEey = "Ad";
+    
     [SerializeField] private float _waitTime;
     [SerializeField] private int _adsTimer;
     [SerializeField] private GameObject _adsPannel; 
@@ -27,6 +29,7 @@ public class InterTimer : MonoBehaviour
         _currentTimer = _adsTimer;
         _isFirstAd = true;
         StartCoroutine(Timer());
+        PlayerPrefs.SetInt(AdKEey, 0);
     }
 
     private void OnEnable()
@@ -60,8 +63,8 @@ public class InterTimer : MonoBehaviour
                _isFirstAd = false;
             }
 
-            InterstitialAd.Show(_adOpened, _interstitialAdClose, _adErrorMessage); 
-            Debug.Log("InterstAD");
+            InterstitialAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnInterstitialAdClose); 
+            Debug.Log("Inter");
 
             _adsPannel.SetActive(false);
 
@@ -71,6 +74,7 @@ public class InterTimer : MonoBehaviour
 
     private void OnAdOpened()
     {
+        PlayerPrefs.SetInt(AdKEey, 1);
         AudioListener.pause = true;
         AudioListener.volume = 0f;
         Time.timeScale = 0f;
@@ -81,6 +85,7 @@ public class InterTimer : MonoBehaviour
         AudioListener.pause = false;
         AudioListener.volume = 1f;
         Time.timeScale = 1f;
+        PlayerPrefs.SetInt(AdKEey, 0);
     }
     
     private IEnumerator ChangeText()
