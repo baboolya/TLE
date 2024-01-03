@@ -33,8 +33,8 @@ public class RewScript : MonoBehaviour
             _rewardAdClosed,
             _adErrorMessage);
 
-        _adOpened?.Invoke();
-        _rewardAdClosed?.Invoke();
+        // _adOpened?.Invoke();
+        // _rewardAdClosed?.Invoke();
     }
 
     private void OnAdOpened()
