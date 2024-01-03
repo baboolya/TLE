@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Agava.YandexGames;
+using Naninovel;
 
 public class RewScript : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class RewScript : MonoBehaviour
     private Action _rewardAdClosed;
     private Action _getReward;
     private Action<string> _adErrorMessage;
+    private IInputManager _inputManager;
 
     protected void OnEnable()
     {
+        _inputManager = Engine.GetService<IInputManager>();
         _adOpened += OnAdOpened;
         _rewardAdClosed += OnRewardAdClose;
     }
@@ -39,6 +42,7 @@ public class RewScript : MonoBehaviour
 
     private void OnAdOpened()
     {
+        _inputManager.ProcessInput = false;
         AudioListener.pause = true;
         AudioListener.volume = 0f;
 
@@ -47,6 +51,7 @@ public class RewScript : MonoBehaviour
 
     private void OnRewardAdClose()
     {
+        _inputManager.ProcessInput = true;
         AudioListener.pause = false;
         AudioListener.volume = 1f;
 
