@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using Agava.YandexGames;
 using TMPro;
+using Naninovel;
 
 public class InterTimer : MonoBehaviour
 {
@@ -11,19 +12,24 @@ public class InterTimer : MonoBehaviour
     [SerializeField] private float _waitTime;
     [SerializeField] private int _adsTimer;
     [SerializeField] private GameObject _adsPannel; 
+    [SerializeField] private GameObject _pausePannel; 
 
     private TMP_Text _textMessage;
+    private IInputManager _inputManager;
+
+    private bool _isFirstAd;
+    private int _currentTimer;
+    private Coroutine _changer;
+    private UIControl _uIControl;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
     private Action<string> _adErrorMessage;
-    private bool _isFirstAd;
-    private int _currentTimer;
-    private Coroutine _changer;
 
     private void Start()
     {
         _textMessage = _adsPannel.GetComponentInChildren<TMP_Text>();
+        _uIControl = _pausePannel.GetComponent<UIControl>();
 
         _changer = StartCoroutine(ChangeText());
         _currentTimer = _adsTimer;
@@ -34,6 +40,8 @@ public class InterTimer : MonoBehaviour
 
     private void OnEnable()
     {
+        _inputManager = Engine.GetService<IInputManager>();
+
         _adOpened += OnAdOpened;
         _interstitialAdClose += OnInterstitialAdClose;
     }
@@ -54,6 +62,8 @@ public class InterTimer : MonoBehaviour
         {
             if (_isFirstAd == false)
             {
+                _uIControl.ActivateCanvasGroup();
+
                 _adsPannel.SetActive(true);
 
                 yield return ChangeText();
@@ -64,6 +74,7 @@ public class InterTimer : MonoBehaviour
             }
 
             InterstitialAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnInterstitialAdClose); 
+
             Debug.Log("Inter");
 
             _adsPannel.SetActive(false);
@@ -74,18 +85,13 @@ public class InterTimer : MonoBehaviour
 
     private void OnAdOpened()
     {
-        PlayerPrefs.SetInt(AdKEey, 1);
-        AudioListener.pause = true;
-        AudioListener.volume = 0f;
         Time.timeScale = 0f;
     }
     
     private void OnInterstitialAdClose(bool result)
-    {        
-        AudioListener.pause = false;
-        AudioListener.volume = 1f;
+    {
+        _uIControl.DeactivateCanvasGroup();
         Time.timeScale = 1f;
-        PlayerPrefs.SetInt(AdKEey, 0);
     }
     
     private IEnumerator ChangeText()

@@ -1,6 +1,7 @@
 
 @back yprav
-@i
+Для компьютера: стрелка вправо. [br]Для мобильных устройств: свайп влево.
+@hidePrinter 
 @sfx shum volume:0.7 loop:true
 @sfx jertv volume:0.3
 @back rep

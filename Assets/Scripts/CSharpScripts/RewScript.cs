@@ -13,6 +13,7 @@ public class RewScript : MonoBehaviour
     private Action _rewardAdClosed;
     private Action _getReward;
     private Action<string> _adErrorMessage;
+
     private IInputManager _inputManager;
     
     protected void OnEnable()
