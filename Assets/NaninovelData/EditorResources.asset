@@ -789,7 +789,7 @@ MonoBehaviour:
       guid: f709a664a77585d448e929e91eb1caa1
     - name: Bible
       pathPrefix: Backgrounds/MainBackground
-      guid: f697434d5e6abc54b90ddf8d498b6327
+      guid: 93dcef6e4df5a1f4cb04b432d2af1229
     - name: Clinik
       pathPrefix: Backgrounds/MainBackground
       guid: 7d72dcf1581ce7642b71b4d90155d51e
@@ -1371,12 +1371,6 @@ MonoBehaviour:
     - name: Child
       pathPrefix: Characters/Tsuk
       guid: d626fe3ede7d704488f3c7ca8a47dd90
-    - name: School
-      pathPrefix: Characters/Tsuk
-      guid: 89efcae552d300b459fd415ed5ceeef4
-    - name: Demon
-      pathPrefix: Characters/Tsuk
-      guid: 3586d0a4eb7734143bf56b43fd1b2bfc
   - Id: Characters/45bacd2a-77fb-4065-a391-00a50b00abe5
     Resources:
     - name: 1
