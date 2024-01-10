@@ -18,66 +18,16 @@ MonoBehaviour:
     - name: Dialogue
       pathPrefix: TextPrinters
       guid: 1bc08ccd31adff6439e97161aa6e1d8b
-  - Id: TextPrinters/256cda84-3a5f-4484-9439-a5efcb7bd5a6
-    Resources:
-    - name: Fullscreen
-      pathPrefix: TextPrinters
-      guid: c87cebd3f0d4f174789cd351ce9591c4
-  - Id: TextPrinters/067fe50e-daaf-4053-89fc-dda47c62ffa7
-    Resources:
-    - name: Wide
-      pathPrefix: TextPrinters
-      guid: 781828b806deb1e4cbf50ef9de41da10
-  - Id: TextPrinters/949325d9-a247-4719-8f99-efe8a9564b9c
-    Resources:
-    - name: Chat
-      pathPrefix: TextPrinters
-      guid: 0126b92e4ff0f564aaa7a38eae3ef6e7
-  - Id: TextPrinters/25cc408b-c4d6-453c-ae63-a125f33bd3f3
-    Resources:
-    - name: Bubble
-      pathPrefix: TextPrinters
-      guid: b47d9659b2be5ee4e95a776f213c9d4b
   - Id: TextPrinters/a0007552-da3a-4c73-912b-c671c7c5e77c
     Resources:
     - name: TMProDialogue
       pathPrefix: TextPrinters
       guid: 5838611042eaced44954639c4ea4d81e
-  - Id: TextPrinters/5425c3ca-90dc-4ce2-8355-46ccedfcb1d1
-    Resources:
-    - name: TMProFullscreen
-      pathPrefix: TextPrinters
-      guid: a2aaa417785eeca409e78c404f333ee5
-  - Id: TextPrinters/2029e99a-3618-4f98-bd79-56f0ec46f993
-    Resources:
-    - name: TMProWide
-      pathPrefix: TextPrinters
-      guid: 7860ef40eae6a3341be02586f7edd980
-  - Id: TextPrinters/097d9e99-c19b-4c26-b028-f5af32d1a648
-    Resources:
-    - name: TMProChat
-      pathPrefix: TextPrinters
-      guid: 6f9836a3c4f777741b1962979d97e485
-  - Id: TextPrinters/34617860-c399-44f3-9e30-d182d7c82ba4
-    Resources:
-    - name: TMProBubble
-      pathPrefix: TextPrinters
-      guid: 18cfa78b5fc89b745ba69d51a6a8629a
   - Id: ChoiceHandlers/0cb78c92-3399-4551-9104-4ecf1810c01b
     Resources:
     - name: ButtonList
       pathPrefix: ChoiceHandlers
       guid: 1f6aa29000e839c409e6a9c0704adc96
-  - Id: ChoiceHandlers/c7f79fcb-ed88-44cf-8284-51fdf1920643
-    Resources:
-    - name: ButtonArea
-      pathPrefix: ChoiceHandlers
-      guid: 4fa6d62f894ae6e4698bfa8af59e7942
-  - Id: ChoiceHandlers/c5b15ad8-795d-45f8-b12d-399787abd17b
-    Resources:
-    - name: ChatReply
-      pathPrefix: ChoiceHandlers
-      guid: 0e61df696cabbea448510879ee732b00
   - Id: Spawn
     Resources:
     - name: Animate
@@ -92,27 +42,9 @@ MonoBehaviour:
     - name: Rain
       pathPrefix: Spawn
       guid: a9117e2fa90704d45b3e1461596c11ee
-    - name: ShakeBackground
-      pathPrefix: Spawn
-      guid: 9f56c556ba32fd54fae62347c25a8145
-    - name: ShakeCamera
-      pathPrefix: Spawn
-      guid: 1c5b86cf3cfbb1f44ae5641699077da4
-    - name: ShakeCharacter
-      pathPrefix: Spawn
-      guid: 1224d69e1592d624cbde93d0f7383d91
-    - name: ShakePrinter
-      pathPrefix: Spawn
-      guid: 2795040988e866646801c80024c50be1
     - name: Snow
       pathPrefix: Spawn
       guid: 9f4e71cb27fffa04486737d2cf8d622d
-    - name: SunShafts
-      pathPrefix: Spawn
-      guid: c4bf810b9b6cc9f44a58fd670678ded4
-    - name: Blur
-      pathPrefix: Spawn
-      guid: e466d9326b30a4b49a3dad428b4d9968
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -136,12 +68,6 @@ MonoBehaviour:
     - name: LoadingUI
       pathPrefix: UI
       guid: 53aad00e5cf184e458adb001c550518a
-    - name: MovieUI
-      pathPrefix: UI
-      guid: f9a211517d1cb1a44964dc2254463049
-    - name: RollbackUI
-      pathPrefix: UI
-      guid: a32c73a3aff4b274c85b3ff16c854b07
     - name: SaveLoadUI
       pathPrefix: UI
       guid: 8d53726b3d08433479398f02b4780e7f
@@ -151,9 +77,6 @@ MonoBehaviour:
     - name: SettingsUI
       pathPrefix: UI
       guid: 65c37f59e9b266f468dd5381fdc03fc3
-    - name: TipsUI
-      pathPrefix: UI
-      guid: f5aae572225ee1b4c96d1a17fc5cb073
     - name: TitleUI
       pathPrefix: UI
       guid: 4b121aa1be1b7e04480b452c595ff17a
@@ -1207,6 +1130,12 @@ MonoBehaviour:
     - name: yprav
       pathPrefix: Backgrounds/MainBackground
       guid: 01d1bd3a9c694b148b95e0480e539177
+    - name: end1
+      pathPrefix: Backgrounds/MainBackground
+      guid: a353ae09148aab24b8ddb9c705e3846a
+    - name: end2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 91b80e78fa973294da2cd6e3c4ec8aa9
   - Id: Characters/431817bc-4dcb-46a1-a082-2c157e6dca76
     Resources:
     - name: Crown
@@ -1362,10 +1291,7 @@ MonoBehaviour:
       pathPrefix: Audio
       guid: 4ca7943f331285b4ab4ebd895cfca951
   - Id: Movies
-    Resources:
-    - name: Scream1
-      pathPrefix: Movies
-      guid: 9d2056d7e8757ab4ba932eab06ae8254
+    Resources: []
   - Id: Characters/efb9db67-f09f-48fd-9f60-b18b859420c8
     Resources:
     - name: Child
@@ -1381,17 +1307,7 @@ MonoBehaviour:
     - name: 1
       pathPrefix: Characters/Svash
       guid: 6802811bac936124d926d46788f8a765
-  - Id: ChoiceHandlers/db68bce7-c7b8-42f0-9933-e5d85e0a4f04
-    Resources:
-    - name: RewardButtonList
-      pathPrefix: ChoiceHandlers
-      guid: 1f6aa29000e839c409e6a9c0704adc96
   - Id: CharacterAvatars
     Resources: []
   - Id: Unlockables
     Resources: []
-  - Id: ChoiceHandlers/9b8c2493-79d8-4522-b74e-15a46441e949
-    Resources:
-    - name: rewBL
-      pathPrefix: ChoiceHandlers
-      guid: 81fc56ff5f050da41b2eb9f15b868508
