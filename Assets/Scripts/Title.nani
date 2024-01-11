@@ -1,5 +1,4 @@
 
 @back Menu
-@spawn Rain
-@sfx Rain volume:0.7 loop:true
+@bgm Rain
 @stop

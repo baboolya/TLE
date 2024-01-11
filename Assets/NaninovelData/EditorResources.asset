@@ -1226,7 +1226,7 @@ MonoBehaviour:
     Resources:
     - name: 123
       pathPrefix: Audio
-      guid: c91b9fd6838f364448dfe0cb1521fa12
+      guid: 0d2ed0dbbca06874cac2ce949b3f863b
     - name: Hearth
       pathPrefix: Audio
       guid: 89e0ea0de58105e4e9ee959f1d3ef7dd
@@ -1245,15 +1245,6 @@ MonoBehaviour:
     - name: postr
       pathPrefix: Audio
       guid: 01e14065733f5894a91722b0f5b05b4b
-    - name: demons
-      pathPrefix: Audio
-      guid: 678be5028ae3c7045810a35ff8f5ed25
-    - name: jertv
-      pathPrefix: Audio
-      guid: 1047fd792ec31a340bf56e3dfd760257
-    - name: shkol
-      pathPrefix: Audio
-      guid: eeb1d9e7643cb694f978d9f82f9619e5
     - name: na4
       pathPrefix: Audio
       guid: 11c1566d849be5b47b307b62f0371c4e

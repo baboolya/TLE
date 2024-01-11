@@ -28,7 +28,7 @@ Friend: -"Хорошо. Спасибо вам за помощь"
 Она проводила вас до строительного магазина, откуда вскоре вышел ваш отец. 
 @hide Babka
 @back PadikDruga
-@char Dad.Winter pos:15,0 look:right
+@char Dad.Winter look:left pos:15,0
 Dad: -"Ребят, вы чего такие хмурые? Случилось чего?"
 @choice "Рассказать правду" goto:2111
 @choice "Рассказать только про бабулю" goto:2112

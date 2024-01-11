@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using UnityEngine;
 using Agava.YandexGames;
+using Agava.YandexMetrica;
 using TMPro;
 using Naninovel;
 
@@ -21,6 +22,8 @@ public class InterTimer : MonoBehaviour
     private int _currentTimer;
     private Coroutine _changer;
     private UIControl _uIControl;
+    private float _sendTimer = 1f;
+    private float _currentSendTimer;
 
     private Action _adOpened;
     private Action<bool> _interstitialAdClose;
@@ -28,6 +31,7 @@ public class InterTimer : MonoBehaviour
 
     private void Start()
     {
+        YandexMetrica.Send("StartAd");
         _textMessage = _adsPannel.GetComponentInChildren<TMP_Text>();
         _uIControl = _pausePannel.GetComponent<UIControl>();
 
@@ -36,6 +40,17 @@ public class InterTimer : MonoBehaviour
         _isFirstAd = true;
         StartCoroutine(Timer());
         PlayerPrefs.SetInt(AdKEey, 0);
+    }
+
+    private void Update()
+    {
+        _currentSendTimer += Time.deltaTime;
+
+        if(_currentSendTimer >= _sendTimer)
+        {
+            _currentSendTimer = 0;
+            YandexMetrica.Send("Played");
+        }
     }
 
     private void OnEnable()
@@ -60,6 +75,8 @@ public class InterTimer : MonoBehaviour
 
         while (true)
         {
+            YandexMetrica.Send("ShowAd");
+
             if (_isFirstAd == false)
             {
                 _uIControl.ActivateCanvasGroup();

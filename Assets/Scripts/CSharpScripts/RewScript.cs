@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Agava.YandexGames;
+using Agava.YandexMetrica;
 using Naninovel;
 
 public class RewScript : MonoBehaviour
@@ -18,6 +19,8 @@ public class RewScript : MonoBehaviour
     
     protected void OnEnable()
     {
+        YandexMetrica.Send("RewardShowed");
+
         _inputManager = Engine.GetService<IInputManager>();
         _adOpened += OnAdOpened;
         _rewardAdClosed += OnRewardAdClose;
@@ -33,6 +36,8 @@ public class RewScript : MonoBehaviour
     public void PlayAd()
     {
         Debug.Log("AD");
+
+        YandexMetrica.Send("RewardPlayed");
 
         VideoAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnRewardAdClose);
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Naninovel;
+using Agava.YandexMetrica;
 
 public class UIControl : MonoBehaviour
 {
