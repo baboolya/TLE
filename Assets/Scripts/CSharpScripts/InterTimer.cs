@@ -31,7 +31,6 @@ public class InterTimer : MonoBehaviour
 
     private void Start()
     {
-        YandexMetrica.Send("StartAd");
         _textMessage = _adsPannel.GetComponentInChildren<TMP_Text>();
         _uIControl = _pausePannel.GetComponent<UIControl>();
 
@@ -40,6 +39,10 @@ public class InterTimer : MonoBehaviour
         _isFirstAd = true;
         StartCoroutine(Timer());
         PlayerPrefs.SetInt(AdKEey, 0);
+        
+#if !UNITY_EDITOR
+        YandexMetrica.Send("StartAd");
+#endif
     }
 
     private void Update()
@@ -49,7 +52,10 @@ public class InterTimer : MonoBehaviour
         if(_currentSendTimer >= _sendTimer)
         {
             _currentSendTimer = 0;
+            
+#if !UNITY_EDITOR
             YandexMetrica.Send("Played");
+#endif
         }
     }
 
@@ -75,7 +81,9 @@ public class InterTimer : MonoBehaviour
 
         while (true)
         {
+#if !UNITY_EDITOR
             YandexMetrica.Send("ShowAd");
+#endif
 
             if (_isFirstAd == false)
             {
@@ -89,8 +97,10 @@ public class InterTimer : MonoBehaviour
             {
                _isFirstAd = false;
             }
-
-            InterstitialAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnInterstitialAdClose); 
+            
+#if !UNITY_EDITOR
+            InterstitialAd.Show(onOpenCallback: OnAdOpened, onCloseCallback: OnInterstitialAdClose);
+ #endif
 
             Debug.Log("Inter");
 

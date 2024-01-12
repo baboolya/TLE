@@ -108,14 +108,6 @@ namespace Naninovel.UI
             {
                 if (button) button.Hide();
             }
-            
-            // RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
-            //
-            // foreach (var item in rewardChoiceHandlerPanel)
-            // {
-            //     if (item != null && item != this)
-            //         item.RemoveAllThisChoiceButtonsDelayed();
-            // }
         }
 
         public virtual void RemoveAllChoiceButtons()
@@ -126,35 +118,7 @@ namespace Naninovel.UI
             }
 
             ChoiceButtons.Clear();
-
-            // RewardHandlerPanel[] rewardChoiceHandlerPanel = FindObjectsOfType<RewardHandlerPanel>();
-            //
-            // foreach (var item in rewardChoiceHandlerPanel)
-            // {
-            //     if (item != null && item != this)
-            //         item.RemoveThisTypeOfChoiceButtons();
-            // }
         }
-
-        // public void RemoveThisTypeOfChoiceButtons()
-        // {
-        //     for (int i = 0; i < ChoiceButtons.Count; i++) 
-        //         Destroy(ChoiceButtons[i].gameObject);
-        //
-        //     ChoiceButtons.Clear();
-        // }
-        //
-        // public void RemoveAllThisChoiceButtonsDelayed()
-        // {
-        //     ChoiceButtons?.ForEach(HideIfValid);
-        //     
-        //     removeAllButtonsPending = true;
-        //
-        //     void HideIfValid (ChoiceHandlerButton button)
-        //     {
-        //         if (button) button.Hide();
-        //     }
-        // }
 
         protected override void Awake ()
         {

@@ -3,7 +3,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using UnityEngine;
+
+using PlayerPrefs = Agava.YandexGames.Utility.PlayerPrefs;
 
 namespace Naninovel
 {
@@ -139,7 +142,7 @@ namespace Naninovel
 
         public override bool AnySaveExists ()
         {
-            var prefsValue = PlayerPrefs.GetString(IndexKey);
+            var prefsValue = Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(IndexKey)));
             if (string.IsNullOrEmpty(prefsValue)) return false;
             return ParseIndexList(prefsValue).Count > 0;
         }
@@ -162,11 +165,13 @@ namespace Naninovel
 
             var sourceKey = SlotIdToKey(sourceSlotId);
             var destKey = SlotIdToKey(destSlotId);
-            var sourceValue = PlayerPrefs.GetString(sourceKey);
+            var sourceValue = Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(sourceKey)));
 
             InvokeOnBeforeRename(sourceSlotId, destSlotId);
             DeleteSaveSlot(sourceSlotId);
-            PlayerPrefs.SetString(destKey, sourceValue);
+            
+            string encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(sourceValue));
+            PlayerPrefs.SetString(destKey, encodedString);
             AddKeyIndexIfNotExist(destKey);
             PlayerPrefs.Save();
             InvokeOnRenamed(sourceSlotId, destSlotId);
@@ -185,7 +190,8 @@ namespace Naninovel
                 jsonData = Convert.ToBase64String(bytes);
             }
 
-            PlayerPrefs.SetString(slotKey, jsonData);
+            string encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonData));
+            PlayerPrefs.SetString(slotKey, encodedString);
             AddKeyIndexIfNotExist(slotKey);
             PlayerPrefs.Save();
         }
@@ -201,7 +207,8 @@ namespace Naninovel
                 jsonData = Convert.ToBase64String(bytes);
             }
 
-            PlayerPrefs.SetString(slotKey, jsonData);
+            string encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonData));
+            PlayerPrefs.SetString(slotKey, encodedString);
             AddKeyIndexIfNotExist(slotKey);
             PlayerPrefs.Save();
         }
@@ -213,11 +220,11 @@ namespace Naninovel
 
             if (Binary)
             {
-                var base64 = PlayerPrefs.GetString(slotKey);
+                var base64 = Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(slotKey)));
                 var bytes = Convert.FromBase64String(base64);
                 jsonData = await StringUtils.UnzipStringAsync(bytes);
             }
-            else jsonData = PlayerPrefs.GetString(slotKey);
+            else jsonData = Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(slotKey)));
 
             return JsonUtility.FromJson<TData>(jsonData);
         }
@@ -225,25 +232,32 @@ namespace Naninovel
         protected virtual void AddKeyIndexIfNotExist (string slotKey)
         {
             if (!PlayerPrefs.HasKey(IndexKey))
-                PlayerPrefs.SetString(IndexKey, string.Empty);
+            {
+                string emptyString = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Empty));
+                PlayerPrefs.SetString(IndexKey, emptyString);
+            }
 
-            var indexList = ParseIndexList(PlayerPrefs.GetString(IndexKey));
+            var indexList = ParseIndexList(Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(IndexKey))));
             if (indexList.Exists(i => i == slotKey)) return;
 
             indexList.Add(slotKey);
             var index = string.Join(IndexDelimiter, indexList);
-            PlayerPrefs.SetString(IndexKey, index);
+            
+            string encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(index));
+            PlayerPrefs.SetString(IndexKey, encodedString);
         }
 
         protected virtual void RemoveKeyIndex (string slotKey)
         {
             if (!PlayerPrefs.HasKey(IndexKey)) return;
 
-            var indexList = ParseIndexList(PlayerPrefs.GetString(IndexKey));
+            var indexList = ParseIndexList(Encoding.UTF8.GetString(Convert.FromBase64String(PlayerPrefs.GetString(IndexKey))));
             if (!indexList.Remove(slotKey)) return;
 
             var index = string.Join(IndexDelimiter, indexList);
-            PlayerPrefs.SetString(IndexKey, index);
+            
+            string encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(index));
+            PlayerPrefs.SetString(IndexKey, encodedString);
         }
 
         private List<string> ParseIndexList (string prefsValue)
